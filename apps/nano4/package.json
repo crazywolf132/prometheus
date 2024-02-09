@@ -6,10 +6,8 @@
   "scripts": {
     "start": "prometheus dev",
     "clean": "rm -rf ./dist ./node_modules ./turbo",
-    "dev-old": "vite",
     "out": "prometheus build -l -n app4",
-    "build": "prometheus build -n app4",
-    "preview": "vite preview"
+    "build": "prometheus build -n app4"
   },
   "dependencies": {
     "vue": "^3.3.11"

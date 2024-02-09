@@ -4,6 +4,7 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
+    "start": "prometheus dev",
     "out": "prometheus build -l -n about",
     "build": "prometheus build -n about"
   },

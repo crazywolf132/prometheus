@@ -4,12 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "vite start",
+    "start": "prometheus dev",
     "clean": "rm -rf ./dist ./node_modules ./turbo",
     "build": "prometheus build -n app3",
-    "out": "prometheus build -l -n app3",
-    "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "out": "prometheus build -l -n app3"
   },
   "devDependencies": {
     "@local/prometheus": "workspace:*",

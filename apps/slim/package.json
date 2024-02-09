@@ -7,8 +7,7 @@
     "start": "prometheus dev",
     "clean": "rm -rf ./dist ./node_modules ./turbo",
     "build": "prometheus build -n slim",
-    "out": "prometheus build -l -n slim",
-    "preview": "vite preview"
+    "out": "prometheus build -l -n slim"
   },
   "dependencies": {
     "react": "^18.2.0",

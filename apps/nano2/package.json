@@ -4,11 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "prometheus dev",
     "clean": "rm -rf ./dist ./node_modules ./turbo",
     "build": "prometheus build -e -n app2",
-    "out": "prometheus build -e -l -n app2",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "out": "prometheus build -e -l -n app2"
   },
   "dependencies": {
     "react": "^18.2.0",

@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "prometheus dev",
     "clean": "rm -rf ./dist ./node_modules ./turbo",
     "build": "prometheus build -n app1",
-    "out": "prometheus build -l -n app1",
-    "preview": "vite preview"
+    "out": "prometheus build -l -n app1"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
