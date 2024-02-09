@@ -63,7 +63,7 @@ export default {
             "local": script_local(packageName),
         }
         pkg.devDependencies = {
-            "@local/prometheus": "*",
+            "@local/prometheus": "workspace:*",
             "typescript": "latest",
             ...(pkg.devDependencies || {}),
         }

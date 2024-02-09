@@ -1,5 +1,6 @@
 import type { Bundle, NanoAppFunction } from "@types";
 import { execute, fetchBundle, returnAppAsElement } from "@utils";
+// @ts-ignore; No type files for this dep
 import cloneOrCreate from "clone-or-create";
 import React from "react";
 import ReactDOM from "react-dom";

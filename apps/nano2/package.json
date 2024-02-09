@@ -16,8 +16,8 @@
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
-    "@local/prometheus": "*",
-    "@local/ui": "*",
+    "@local/prometheus": "workspace:*",
+    "@local/ui": "workspace:*",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
