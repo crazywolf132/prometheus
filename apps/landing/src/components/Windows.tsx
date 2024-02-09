@@ -1,4 +1,4 @@
-import * as sdk from "@local/sdk";
+
 import * as runtime from "@prometheus/runtime";
 import { LoadApp } from '@prometheus/runtime';
 import r from "react";
@@ -8,7 +8,6 @@ export const Windows = () => {
     const internalStack: Record<string, any> = {
         react: r,
         "react-dom": rd,
-        "@local/sdk": sdk,
         "@prometheus/runtime": runtime,
     };
 
