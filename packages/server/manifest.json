@@ -1,0 +1,40 @@
+{
+  "nanoapps": [
+    {
+      "name": "slim",
+      "url": "http://localhost:5000/app/slim",
+      "sha256": "6cb2e48703b81c689d638e01e6c09c2d9652140cb62e2a4351be4ab3c448ae5f",
+      "location": "slim"
+    },
+    {
+      "name": "app1",
+      "url": "http://localhost:5000/app/app1",
+      "sha256": "0ff92618daba047fba061694a5c5fd202c42d063c8e788c212153e34eaa794b6",
+      "locaiton": "react-app"
+    },
+    {
+      "name": "app2",
+      "url": "http://localhost:5000/app/app2",
+      "sha256": "6cb2e48703b81c689d638e01e6c09c2d9652140cb62e2a4351be4ab3c448ae5f",
+      "location": "app"
+    },
+    {
+      "name": "app3",
+      "url": "http://localhost:5000/app/app3",
+      "sha256": "6cb2e48703b81c689d638e01e6c09c2d9652140cb62e2a4351be4ab3c448ae5f",
+      "location": "app"
+    },
+    {
+      "name": "app4",
+      "url": "http://localhost:5000/app/app4",
+      "sha256": "6cb2e48703b81c689d638e01e6c09c2d9652140cb62e2a4351be4ab3c448ae5f",
+      "location": "app"
+    },
+    {
+      "name": "shell",
+      "url": "http://localhost:5000/app/shell",
+      "sha256": "6cb2e48703b81c689d638e01e6c09c2d9652140cb62e2a4351be4ab3c448ae5f",
+      "location": "shell"
+    }
+  ]
+}

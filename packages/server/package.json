@@ -1,0 +1,30 @@
+{
+  "name": "@local/server",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist ./node_modules ./turbo",
+    "build": "tsup",
+    "devv": "nodemon -I --exec node --experimental-specifier-resolution=node --loader ts-node/esm ./src/index.ts"
+  },
+  "devDependencies": {
+    "@local/prometheus": "*",
+    "@hono/node-server": "1.7.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.11.10",
+    "fs-extra": "^11.2.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "volog": "^1.1.1"
+  }
+}

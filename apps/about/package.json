@@ -1,0 +1,16 @@
+{
+  "name": "about",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "out": "prometheus build -l -n about",
+    "build": "prometheus build -n about"
+  },
+  "devDependencies": {
+    "@local/prometheus": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3"
+  }
+}

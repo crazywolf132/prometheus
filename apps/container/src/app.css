@@ -1,0 +1,10 @@
+.exmaple {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    border: solid red 2px;
+}

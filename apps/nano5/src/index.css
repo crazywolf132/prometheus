@@ -1,0 +1,49 @@
+:host {
+    background: #BFDBFE;
+}
+
+.center {
+    padding: 12px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    background: white;
+    border-radius: 99999px;
+    padding: 8px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    color: black;
+}
+
+svg {
+    height: 36px;
+    width: 36px;
+}
+
+.header {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: -0.05em;
+    text-align: center;
+    word-break: break-word;
+    letter-spacing: -0.025em;
+    margin-bottom: 8px;
+    color: rgb(17, 24, 39);
+}
+
+.subheader {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(75, 85, 99);
+    text-align: center;
+}

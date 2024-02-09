@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "removeComments": true,
+    "target": "ES6",
+    "esModuleInterop": true,
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "resolveJsonModule": true,
+    "jsx": "react",
+    "paths": {
+      "@types": ["./src/types.ts"],
+      "@utils": ["./src/utils/index.ts"]
+    },
+    // Strict checks
+    "alwaysStrict": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    // Linter checks
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true, // Accessing index must always check for undefined.
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "includes": ["./**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

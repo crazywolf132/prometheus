@@ -1,0 +1,24 @@
+{
+  "name": "bakery",
+  "private": true,
+  "author": "crazywolf132",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "clean": "turbo run clean",
+    "prepare": "turbo run prepare",
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "out": "turbo run out",
+    "start": "turbo run start"
+  },
+  "devDependencies": {
+    "turbo": "^1.12.2"
+  },
+  "resolutions": {
+    "string-width": "4.2.3"
+  }
+}

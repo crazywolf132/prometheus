@@ -1,0 +1,36 @@
+{
+  "name": "@prometheus/runtime",
+  "version": "1.0.0",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "author": "crazywolf132",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "clean": "rm -rf ./dist ./node_modules ./turbo",
+    "prepare": "tsup",
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@types/jest": "^29.5.12",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@types/react-lottie": "^1.2.10",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-lottie": "^1.2.4",
+    "vue": "^3.4.15"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@local/ui",
+  "version": "1.0.0",
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.mts",
+  "author": "crazywolf132",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "tsup",
+    "dev": "tsup --watch",
+    "build": "tsup"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  }
+}
