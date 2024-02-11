@@ -10,7 +10,7 @@
     "out": "prometheus build -l -n app3"
   },
   "devDependencies": {
-    "@local/prometheus": "workspace:*",
+    "@local/prometheus": "workspace:^",
     "@sveltejs/vite-plugin-svelte": "^3.0.2",
     "@tsconfig/svelte": "^5.0.2",
     "svelte": "^4.2.10",

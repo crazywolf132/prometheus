@@ -16,8 +16,8 @@
     "devv": "nodemon -I --exec node --experimental-specifier-resolution=node --loader ts-node/esm ./src/index.ts"
   },
   "devDependencies": {
-    "@local/prometheus": "workspace:*",
     "@hono/node-server": "1.7.0",
+    "@local/prometheus": "workspace:^",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^20.11.10",
     "fs-extra": "^11.2.0",

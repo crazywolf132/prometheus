@@ -10,7 +10,7 @@ export default defineConfig(
       dts: true,
       platform: "node",
       metafile: true,
-      skipNodeModulesBundle: true,
+      skipNodeModulesBundle: false,
     },
     {
       name: "PROMETHEUS_SERVER",
