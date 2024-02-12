@@ -16,7 +16,7 @@
     "start": "turbo run start"
   },
   "devDependencies": {
-    "turbo": "^1.12.3"
+    "turbo": "^1.12.2"
   },
   "packageManager": "yarn@4.1.0"
 }

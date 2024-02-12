@@ -2658,7 +2658,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "bakery@workspace:."
   dependencies:
-    turbo: "npm:^1.12.3"
+    turbo: "npm:^1.12.2"
   languageName: unknown
   linkType: soft
 
@@ -7988,7 +7988,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"turbo@npm:^1.12.3":
+"turbo@npm:^1.12.2":
   version: 1.12.3
   resolution: "turbo@npm:1.12.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fturbo%2F-%2Fturbo-1.12.3.tgz"
   dependencies:
