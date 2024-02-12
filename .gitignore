@@ -18,3 +18,4 @@ turbo-build.log
 .DS_Store
 
 apps/*
+apps
