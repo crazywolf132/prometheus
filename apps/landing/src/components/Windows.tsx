@@ -3,6 +3,9 @@ import * as runtime from "@prometheus/runtime";
 import { LoadApp } from '@prometheus/runtime';
 import r from "react";
 import rd from "react-dom";
+import { Spinner } from "./Spinner";
+
+
 export const Windows = () => {
 
     const internalStack: Record<string, any> = {
@@ -16,7 +19,7 @@ export const Windows = () => {
             <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                 <div className="relative">
                     <div className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg max-h-64 overflow-scroll">
-                        <LoadApp appName="app1" internal={{ ...internalStack }} />
+                        <LoadApp spinner={Spinner} appName="app1" internal={{ ...internalStack }} />
                     </div>
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                 </div>
@@ -24,7 +27,7 @@ export const Windows = () => {
             <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                 <div className="relative">
                     <div className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg max-h-64 overflow-scroll">
-                        <LoadApp appName="app2" internal={{ ...internalStack }} />
+                        <LoadApp spinner={Spinner} appName="app2" internal={{ ...internalStack }} />
                     </div>
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                 </div>
@@ -32,7 +35,7 @@ export const Windows = () => {
                     <div
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg max-h-64 overflow-scroll"
                     >
-                        <LoadApp appName="app3" internal={{ ...internalStack }} />
+                        <LoadApp spinner={Spinner} appName="app3" internal={{ ...internalStack }} />
                     </div>
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                 </div>
@@ -42,7 +45,7 @@ export const Windows = () => {
                     <div
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg max-h-64 overflow-scroll"
                     >
-                        <LoadApp appName="app4" internal={{ ...internalStack }} />
+                        <LoadApp spinner={Spinner} appName="app4" internal={{ ...internalStack }} />
                     </div>
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                 </div>
@@ -50,7 +53,7 @@ export const Windows = () => {
                     <div
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg max-h-64 overflow-scroll"
                     >
-                        <LoadApp appName="slim" internal={{ ...internalStack }} />
+                        <LoadApp spinner={Spinner} appName="slim" internal={{ ...internalStack }} />
                     </div>
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                 </div>
@@ -58,7 +61,7 @@ export const Windows = () => {
                     <div
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg max-h-64 overflow-scroll"
                     >
-                        <LoadApp appName="app5" internal={{ ...internalStack }} />
+                        <LoadApp spinner={Spinner} appName="app5" internal={{ ...internalStack }} />
                     </div>
                     <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                 </div>
