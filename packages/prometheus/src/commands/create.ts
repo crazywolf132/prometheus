@@ -64,6 +64,8 @@ export default {
         }
         pkg.devDependencies = {
             "@local/prometheus": "workspace:^",
+            "@prometheus/env": "workspace:^",
+            "@prometheus/runtime": "workspace:^",
             "typescript": "latest",
             ...(pkg.devDependencies || {}),
         }
