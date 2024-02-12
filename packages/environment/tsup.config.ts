@@ -4,6 +4,7 @@ export default defineConfig({
     name: "ENV",
     entry: ["./src/main.tsx"],
     noExternal: ["react", "react-dom"],
+    external: ["@prometheus/runtime"],
     target: "es2015",
     format: ["cjs"],
     skipNodeModulesBundle: false
