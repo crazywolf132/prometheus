@@ -37,7 +37,7 @@ export default {
         const foundShell = hasShell();
         let external = !foundShell;
         log.info("Development mode starting", "has shell?", foundShell)
-        let basePath = execSync(`node -e "console.log(require.resolve('@prometheus/env'))"`, { encoding: 'utf-8' }).trim().split(sep).slice(0, -2).join(sep);
+        let basePath = execSync(`node -e "console.log(require.resolve('@prometheus/env'))"`, { encoding: 'utf-8' }).trim().split(sep).slice(0, -1).join(sep);
         log.info("Base path", "location", basePath)
 
         // Seeing as we are using yarn in this repo, we will create a `.prometheus` folder which will have the shell code.
