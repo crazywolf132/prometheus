@@ -12,7 +12,7 @@
   },
   "scripts": {
     "clean": "rm -rf ./dist ./node_modules ./turbo",
-    "devv": "yarn nodemon -I --exec node --experimental-specifier-resolution=node --import tsx ./src/index.ts",
+    "dev": "yarn nodemon -I --exec node --experimental-specifier-resolution=node --import tsx ./src/index.ts",
     "start": "tsx ./src/index.ts"
   },
   "dependencies": {
