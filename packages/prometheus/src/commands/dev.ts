@@ -43,6 +43,8 @@ export default {
         // This will allow us to use the shell code from the local project.
         if (!foundShell) {
             // We are going to copy everything from the basePath to the `.prometheus` folder.
+            // Going to delete the `.prometheus` folder
+            try { fs.rmdirSync(".prometheus", { recursive: true }); } catch {}
             fs.mkdirSync(".prometheus/dist", { recursive: true });
             fs.mkdirSync(".prometheus/public/assets", { recursive: true });
             fs.copyFileSync(`${basePath}/index.html`, ".prometheus/index.html");
