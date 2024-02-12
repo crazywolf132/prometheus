@@ -8,7 +8,7 @@ rm yarn.lock
 rm -rf node_modules
 
 # Run git pull and git reset --hard
-git pull
+git pull --force
 git reset --hard
 
 # Run yarn
