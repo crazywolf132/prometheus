@@ -89,7 +89,7 @@ const RAW_RUNTIME_STATE =
     ["@local/sdk", ["workspace:packages/sdk"]],\
     ["@local/server", ["workspace:packages/server"]],\
     ["@local/ui", ["workspace:packages/ui"]],\
-    ["@prometheus/env", ["workspace:packages/environment"]],\
+    ["@prometheus/env", ["virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#workspace:packages/environment", "virtual:ea9010a8d940bd683aa1940d089b8cdbe2bd867e8f1846a31afeae15b6c5423c6c8ed46e92eeaa4f9f27f2c4642e2b23ecb0712176b54c1d89728ba4f23046a0#workspace:packages/environment", "virtual:f45553a964214c3705df28f3dc48a1c4702fd77f96bb090beaa4189a5abd9ed611e20052c137ab4b33df5e4ed3518ec953d42b66304e1bec5ef86d7016419218#workspace:packages/environment", "workspace:packages/environment"]],\
     ["@prometheus/runtime", ["workspace:packages/runtime"]],\
     ["about", ["workspace:apps/about"]],\
     ["bakery", ["workspace:."]],\
@@ -191,7 +191,7 @@ const RAW_RUNTIME_STATE =
           ["@babel/traverse", "npm:7.23.9::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40babel%2Ftraverse%2F-%2Ftraverse-7.23.9.tgz"],\
           ["@babel/types", "npm:7.23.9::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40babel%2Ftypes%2F-%2Ftypes-7.23.9.tgz"],\
           ["convert-source-map", "npm:2.0.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fconvert-source-map%2F-%2Fconvert-source-map-2.0.0.tgz"],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["gensync", "npm:1.0.0-beta.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fgensync%2F-%2Fgensync-1.0.0-beta.2.tgz"],\
           ["json5", "npm:2.2.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fjson5%2F-%2Fjson5-2.2.3.tgz"],\
           ["semver", "npm:6.3.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsemver%2F-%2Fsemver-6.3.1.tgz"]\
@@ -954,7 +954,7 @@ const RAW_RUNTIME_STATE =
           ["@babel/helper-split-export-declaration", "npm:7.22.6::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40babel%2Fhelper-split-export-declaration%2F-%2Fhelper-split-export-declaration-7.22.6.tgz"],\
           ["@babel/parser", "npm:7.23.9::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40babel%2Fparser%2F-%2Fparser-7.23.9.tgz"],\
           ["@babel/types", "npm:7.23.9::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40babel%2Ftypes%2F-%2Ftypes-7.23.9.tgz"],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["globals", "npm:11.12.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fglobals%2F-%2Fglobals-11.12.0.tgz"]\
         ],\
         "linkType": "HARD"\
@@ -1254,7 +1254,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@eslint/eslintrc", "npm:2.1.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40eslint%2Feslintrc%2F-%2Feslintrc-2.1.4.tgz"],\
           ["ajv", "npm:6.12.6::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fajv%2F-%2Fajv-6.12.6.tgz"],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["espree", "npm:9.6.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fespree%2F-%2Fespree-9.6.1.tgz"],\
           ["globals", "npm:13.24.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fglobals%2F-%2Fglobals-13.24.0.tgz"],\
           ["ignore", "npm:5.3.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fignore%2F-%2Fignore-5.3.1.tgz"],\
@@ -1340,7 +1340,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@humanwhocodes/config-array", "npm:0.11.14::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40humanwhocodes%2Fconfig-array%2F-%2Fconfig-array-0.11.14.tgz"],\
           ["@humanwhocodes/object-schema", "npm:2.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40humanwhocodes%2Fobject-schema%2F-%2Fobject-schema-2.0.2.tgz"],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["minimatch", "npm:3.1.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fminimatch%2F-%2Fminimatch-3.1.2.tgz"]\
         ],\
         "linkType": "HARD"\
@@ -1737,7 +1737,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/prometheus/",\
         "packageDependencies": [\
           ["@local/prometheus", "workspace:packages/prometheus"],\
-          ["@prometheus/env", "workspace:packages/environment"],\
+          ["@prometheus/env", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#workspace:packages/environment"],\
           ["@sveltejs/vite-plugin-svelte", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:3.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40sveltejs%2Fvite-plugin-svelte%2F-%2Fvite-plugin-svelte-3.0.2.tgz"],\
           ["@types/cors", "npm:2.8.17::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Fcors%2F-%2Fcors-2.8.17.tgz"],\
           ["@types/express", "npm:4.17.21::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Fexpress%2F-%2Fexpress-4.17.21.tgz"],\
@@ -1769,7 +1769,7 @@ const RAW_RUNTIME_STATE =
           ["clone-or-create", "virtual:3fd78f4028377f2f0baa2fa0d0fa009741a16d9dd75c1ad326c8ac2295e18f9471693bf89199cf8bac8071e2aa8c9f18ffaa7c2019c62938f3aea06f3c618a4f#npm:1.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fclone-or-create%2F-%2Fclone-or-create-1.0.2.tgz"],\
           ["prop-types", "npm:15.8.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fprop-types%2F-%2Fprop-types-15.8.1.tgz"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
-          ["react-dom", "virtual:ea9010a8d940bd683aa1940d089b8cdbe2bd867e8f1846a31afeae15b6c5423c6c8ed46e92eeaa4f9f27f2c4642e2b23ecb0712176b54c1d89728ba4f23046a0#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
+          ["react-dom", "virtual:1854358e727dd3548bae2b8ffdfb2c45070139e4f026cd259ce515425c9c67a1b073462c5a32df03159614f67719a9c00a2add956e9878ae47f917aa4f280bc7#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
           ["react-lottie", "virtual:3fd78f4028377f2f0baa2fa0d0fa009741a16d9dd75c1ad326c8ac2295e18f9471693bf89199cf8bac8071e2aa8c9f18ffaa7c2019c62938f3aea06f3c618a4f#npm:1.2.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-lottie%2F-%2Freact-lottie-1.2.4.tgz"],\
           ["tseep", "npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Ftseep%2F-%2Ftseep-1.2.1.tgz"],\
           ["tsup", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:8.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Ftsup%2F-%2Ftsup-8.0.2.tgz"],\
@@ -1874,10 +1874,85 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@prometheus/env", [\
+      ["virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#workspace:packages/environment", {\
+        "packageLocation": "./.yarn/__virtual__/@prometheus-env-virtual-1854358e72/1/packages/environment/",\
+        "packageDependencies": [\
+          ["@prometheus/env", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#workspace:packages/environment"],\
+          ["@prometheus/runtime", "workspace:packages/runtime"],\
+          ["@types/react", null],\
+          ["@types/react-dom", null],\
+          ["prop-types", "npm:15.8.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fprop-types%2F-%2Fprop-types-15.8.1.tgz"],\
+          ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
+          ["react-dom", "virtual:1854358e727dd3548bae2b8ffdfb2c45070139e4f026cd259ce515425c9c67a1b073462c5a32df03159614f67719a9c00a2add956e9878ae47f917aa4f280bc7#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
+          ["svelte", "npm:4.2.10::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsvelte%2F-%2Fsvelte-4.2.10.tgz"],\
+          ["tsup", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:8.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Ftsup%2F-%2Ftsup-8.0.2.tgz"],\
+          ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
+          ["vue", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:3.4.18::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvue%2F-%2Fvue-3.4.18.tgz"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react"\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:ea9010a8d940bd683aa1940d089b8cdbe2bd867e8f1846a31afeae15b6c5423c6c8ed46e92eeaa4f9f27f2c4642e2b23ecb0712176b54c1d89728ba4f23046a0#workspace:packages/environment", {\
+        "packageLocation": "./.yarn/__virtual__/@prometheus-env-virtual-6f17e43878/1/packages/environment/",\
+        "packageDependencies": [\
+          ["@prometheus/env", "virtual:ea9010a8d940bd683aa1940d089b8cdbe2bd867e8f1846a31afeae15b6c5423c6c8ed46e92eeaa4f9f27f2c4642e2b23ecb0712176b54c1d89728ba4f23046a0#workspace:packages/environment"],\
+          ["@prometheus/runtime", "workspace:packages/runtime"],\
+          ["@types/react", null],\
+          ["@types/react-dom", null],\
+          ["prop-types", "npm:15.8.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fprop-types%2F-%2Fprop-types-15.8.1.tgz"],\
+          ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
+          ["react-dom", "virtual:1854358e727dd3548bae2b8ffdfb2c45070139e4f026cd259ce515425c9c67a1b073462c5a32df03159614f67719a9c00a2add956e9878ae47f917aa4f280bc7#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
+          ["svelte", "npm:4.2.10::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsvelte%2F-%2Fsvelte-4.2.10.tgz"],\
+          ["tsup", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:8.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Ftsup%2F-%2Ftsup-8.0.2.tgz"],\
+          ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
+          ["vue", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:3.4.18::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvue%2F-%2Fvue-3.4.18.tgz"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:f45553a964214c3705df28f3dc48a1c4702fd77f96bb090beaa4189a5abd9ed611e20052c137ab4b33df5e4ed3518ec953d42b66304e1bec5ef86d7016419218#workspace:packages/environment", {\
+        "packageLocation": "./.yarn/__virtual__/@prometheus-env-virtual-e80846304c/1/packages/environment/",\
+        "packageDependencies": [\
+          ["@prometheus/env", "virtual:f45553a964214c3705df28f3dc48a1c4702fd77f96bb090beaa4189a5abd9ed611e20052c137ab4b33df5e4ed3518ec953d42b66304e1bec5ef86d7016419218#workspace:packages/environment"],\
+          ["@prometheus/runtime", "workspace:packages/runtime"],\
+          ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
+          ["@types/react-dom", "npm:18.2.19::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-dom%2F-%2Freact-dom-18.2.19.tgz"],\
+          ["prop-types", "npm:15.8.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fprop-types%2F-%2Fprop-types-15.8.1.tgz"],\
+          ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
+          ["react-dom", "virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
+          ["svelte", "npm:4.2.10::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsvelte%2F-%2Fsvelte-4.2.10.tgz"],\
+          ["tsup", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:8.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Ftsup%2F-%2Ftsup-8.0.2.tgz"],\
+          ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
+          ["vue", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:3.4.18::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvue%2F-%2Fvue-3.4.18.tgz"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
+        ],\
+        "linkType": "SOFT"\
+      }],\
       ["workspace:packages/environment", {\
         "packageLocation": "./packages/environment/",\
         "packageDependencies": [\
-          ["@prometheus/env", "workspace:packages/environment"]\
+          ["@prometheus/env", "workspace:packages/environment"],\
+          ["@prometheus/runtime", "workspace:packages/runtime"],\
+          ["prop-types", "npm:15.8.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fprop-types%2F-%2Fprop-types-15.8.1.tgz"],\
+          ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
+          ["react-dom", "virtual:1854358e727dd3548bae2b8ffdfb2c45070139e4f026cd259ce515425c9c67a1b073462c5a32df03159614f67719a9c00a2add956e9878ae47f917aa4f280bc7#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
+          ["svelte", "npm:4.2.10::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsvelte%2F-%2Fsvelte-4.2.10.tgz"],\
+          ["tsup", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:8.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Ftsup%2F-%2Ftsup-8.0.2.tgz"],\
+          ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
+          ["vue", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:3.4.18::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvue%2F-%2Fvue-3.4.18.tgz"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -2078,7 +2153,7 @@ const RAW_RUNTIME_STATE =
           ["@sveltejs/vite-plugin-svelte-inspector", "virtual:0b55658376cab752bfc7bd56b679365f88fd3bd6b424071dd49411cd270ac70eeec356c0a3ea85b60d1b9c2d11063f6bbabdaadc3ded03e10c557674a84498b5#npm:2.0.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40sveltejs%2Fvite-plugin-svelte-inspector%2F-%2Fvite-plugin-svelte-inspector-2.0.0.tgz"],\
           ["@types/svelte", null],\
           ["@types/vite", null],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["deepmerge", "npm:4.3.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdeepmerge%2F-%2Fdeepmerge-4.3.1.tgz"],\
           ["kleur", "npm:4.1.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fkleur%2F-%2Fkleur-4.1.5.tgz"],\
           ["magic-string", "npm:0.30.7::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fmagic-string%2F-%2Fmagic-string-0.30.7.tgz"],\
@@ -2102,7 +2177,7 @@ const RAW_RUNTIME_STATE =
           ["@sveltejs/vite-plugin-svelte-inspector", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:2.0.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40sveltejs%2Fvite-plugin-svelte-inspector%2F-%2Fvite-plugin-svelte-inspector-2.0.0.tgz"],\
           ["@types/svelte", null],\
           ["@types/vite", null],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["deepmerge", "npm:4.3.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdeepmerge%2F-%2Fdeepmerge-4.3.1.tgz"],\
           ["kleur", "npm:4.1.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fkleur%2F-%2Fkleur-4.1.5.tgz"],\
           ["magic-string", "npm:0.30.7::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fmagic-string%2F-%2Fmagic-string-0.30.7.tgz"],\
@@ -2126,7 +2201,7 @@ const RAW_RUNTIME_STATE =
           ["@sveltejs/vite-plugin-svelte-inspector", "virtual:e66be2b6b0ae75f97994c0ce452ff68f2eca5eca6cd2896db6ea69445fcbf6efee6d43fed025302dfab5844536418d9e82654be385c78682e89604943109bbef#npm:2.0.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40sveltejs%2Fvite-plugin-svelte-inspector%2F-%2Fvite-plugin-svelte-inspector-2.0.0.tgz"],\
           ["@types/svelte", null],\
           ["@types/vite", null],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["deepmerge", "npm:4.3.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdeepmerge%2F-%2Fdeepmerge-4.3.1.tgz"],\
           ["kleur", "npm:4.1.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fkleur%2F-%2Fkleur-4.1.5.tgz"],\
           ["magic-string", "npm:0.30.7::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fmagic-string%2F-%2Fmagic-string-0.30.7.tgz"],\
@@ -2160,7 +2235,7 @@ const RAW_RUNTIME_STATE =
           ["@types/svelte", null],\
           ["@types/sveltejs__vite-plugin-svelte", null],\
           ["@types/vite", null],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["svelte", null],\
           ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
         ],\
@@ -2182,7 +2257,7 @@ const RAW_RUNTIME_STATE =
           ["@types/svelte", null],\
           ["@types/sveltejs__vite-plugin-svelte", null],\
           ["@types/vite", null],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["svelte", "npm:4.2.10::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsvelte%2F-%2Fsvelte-4.2.10.tgz"],\
           ["vite", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
         ],\
@@ -2204,7 +2279,7 @@ const RAW_RUNTIME_STATE =
           ["@types/svelte", null],\
           ["@types/sveltejs__vite-plugin-svelte", null],\
           ["@types/vite", null],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["svelte", "npm:4.2.10::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsvelte%2F-%2Fsvelte-4.2.10.tgz"],\
           ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
         ],\
@@ -2928,7 +3003,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/type-utils", "virtual:0b003fc69c1f97691a69ad7581bfa01833e7e0b5b2852b21b74145f71b7393af8669cca826382b7b9a3ac092b552c60958998acf0e0781d649794b2f862760a8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftype-utils%2F-%2Ftype-utils-6.21.0.tgz"],\
           ["@typescript-eslint/utils", "virtual:0b003fc69c1f97691a69ad7581bfa01833e7e0b5b2852b21b74145f71b7393af8669cca826382b7b9a3ac092b552c60958998acf0e0781d649794b2f862760a8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Futils%2F-%2Futils-6.21.0.tgz"],\
           ["@typescript-eslint/visitor-keys", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fvisitor-keys%2F-%2Fvisitor-keys-6.21.0.tgz"],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["eslint", "npm:8.56.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint%2F-%2Feslint-8.56.0.tgz"],\
           ["graphemer", "npm:1.4.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fgraphemer%2F-%2Fgraphemer-1.4.0.tgz"],\
           ["ignore", "npm:5.3.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fignore%2F-%2Fignore-5.3.1.tgz"],\
@@ -2966,7 +3041,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/types", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypes%2F-%2Ftypes-6.21.0.tgz"],\
           ["@typescript-eslint/typescript-estree", "virtual:c96b1fcebc6c89b5aa732b63683b9c53a55fdbb8e83208a65e4093c60af8f60c4e35e2ad7e1cb60cee669020da94ba70f429621b31e44e16ef1883e674939b35#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-6.21.0.tgz"],\
           ["@typescript-eslint/visitor-keys", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fvisitor-keys%2F-%2Fvisitor-keys-6.21.0.tgz"],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["eslint", "npm:8.56.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint%2F-%2Feslint-8.56.0.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
@@ -3006,7 +3081,7 @@ const RAW_RUNTIME_STATE =
           ["@types/typescript", null],\
           ["@typescript-eslint/typescript-estree", "virtual:c96b1fcebc6c89b5aa732b63683b9c53a55fdbb8e83208a65e4093c60af8f60c4e35e2ad7e1cb60cee669020da94ba70f429621b31e44e16ef1883e674939b35#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-6.21.0.tgz"],\
           ["@typescript-eslint/utils", "virtual:0b003fc69c1f97691a69ad7581bfa01833e7e0b5b2852b21b74145f71b7393af8669cca826382b7b9a3ac092b552c60958998acf0e0781d649794b2f862760a8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Futils%2F-%2Futils-6.21.0.tgz"],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["eslint", "npm:8.56.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint%2F-%2Feslint-8.56.0.tgz"],\
           ["ts-api-utils", "virtual:0b003fc69c1f97691a69ad7581bfa01833e7e0b5b2852b21b74145f71b7393af8669cca826382b7b9a3ac092b552c60958998acf0e0781d649794b2f862760a8#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
@@ -3044,7 +3119,7 @@ const RAW_RUNTIME_STATE =
           ["@types/typescript", null],\
           ["@typescript-eslint/types", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypes%2F-%2Ftypes-6.21.0.tgz"],\
           ["@typescript-eslint/visitor-keys", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fvisitor-keys%2F-%2Fvisitor-keys-6.21.0.tgz"],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["globby", "npm:11.1.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fglobby%2F-%2Fglobby-11.1.0.tgz"],\
           ["is-glob", "npm:4.0.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fis-glob%2F-%2Fis-glob-4.0.3.tgz"],\
           ["minimatch", "npm:9.0.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fminimatch%2F-%2Fminimatch-9.0.3.tgz"],\
@@ -3065,7 +3140,7 @@ const RAW_RUNTIME_STATE =
           ["@types/typescript", null],\
           ["@typescript-eslint/types", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypes%2F-%2Ftypes-6.21.0.tgz"],\
           ["@typescript-eslint/visitor-keys", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fvisitor-keys%2F-%2Fvisitor-keys-6.21.0.tgz"],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["globby", "npm:11.1.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fglobby%2F-%2Fglobby-11.1.0.tgz"],\
           ["is-glob", "npm:4.0.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fis-glob%2F-%2Fis-glob-4.0.3.tgz"],\
           ["minimatch", "npm:9.0.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fminimatch%2F-%2Fminimatch-9.0.3.tgz"],\
@@ -3451,9 +3526,10 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["about", "workspace:apps/about"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
-          ["@prometheus/env", "workspace:packages/environment"],\
+          ["@prometheus/env", "virtual:ea9010a8d940bd683aa1940d089b8cdbe2bd867e8f1846a31afeae15b6c5423c6c8ed46e92eeaa4f9f27f2c4642e2b23ecb0712176b54c1d89728ba4f23046a0#workspace:packages/environment"],\
+          ["@prometheus/runtime", "workspace:packages/runtime"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
-          ["react-dom", "virtual:ea9010a8d940bd683aa1940d089b8cdbe2bd867e8f1846a31afeae15b6c5423c6c8ed46e92eeaa4f9f27f2c4642e2b23ecb0712176b54c1d89728ba4f23046a0#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
+          ["react-dom", "virtual:1854358e727dd3548bae2b8ffdfb2c45070139e4f026cd259ce515425c9c67a1b073462c5a32df03159614f67719a9c00a2add956e9878ae47f917aa4f280bc7#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
         "linkType": "SOFT"\
@@ -3506,7 +3582,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/agent-base-npm-7.1.0-196c26cc79-10c0.zip/node_modules/agent-base/",\
         "packageDependencies": [\
           ["agent-base", "npm:7.1.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fagent-base%2F-%2Fagent-base-7.1.0.tgz"],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"]\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4614,10 +4690,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/debug-virtual-221957cee5/4/.yarn/berry/cache/debug-npm-4.3.4-fae6588ef7-10c0.zip/node_modules/debug/",\
+      ["virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/debug-virtual-90d3ca32fc/4/.yarn/berry/cache/debug-npm-4.3.4-fae6588ef7-10c0.zip/node_modules/debug/",\
         "packageDependencies": [\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["@types/supports-color", null],\
           ["ms", "npm:2.1.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fms%2F-%2Fms-2.1.2.tgz"],\
           ["supports-color", null]\
@@ -5062,7 +5138,7 @@ const RAW_RUNTIME_STATE =
           ["ajv", "npm:6.12.6::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fajv%2F-%2Fajv-6.12.6.tgz"],\
           ["chalk", "npm:4.1.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fchalk%2F-%2Fchalk-4.1.2.tgz"],\
           ["cross-spawn", "npm:7.0.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fcross-spawn%2F-%2Fcross-spawn-7.0.3.tgz"],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["doctrine", "npm:3.0.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdoctrine%2F-%2Fdoctrine-3.0.0.tgz"],\
           ["escape-string-regexp", "npm:4.0.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fescape-string-regexp%2F-%2Fescape-string-regexp-4.0.0.tgz"],\
           ["eslint-scope", "npm:7.2.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-scope%2F-%2Feslint-scope-7.2.2.tgz"],\
@@ -5338,9 +5414,10 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["extreme", "workspace:apps/extreme"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
-          ["@prometheus/env", "workspace:packages/environment"],\
+          ["@prometheus/env", "virtual:ea9010a8d940bd683aa1940d089b8cdbe2bd867e8f1846a31afeae15b6c5423c6c8ed46e92eeaa4f9f27f2c4642e2b23ecb0712176b54c1d89728ba4f23046a0#workspace:packages/environment"],\
+          ["@prometheus/runtime", "workspace:packages/runtime"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
-          ["react-dom", "virtual:ea9010a8d940bd683aa1940d089b8cdbe2bd867e8f1846a31afeae15b6c5423c6c8ed46e92eeaa4f9f27f2c4642e2b23ecb0712176b54c1d89728ba4f23046a0#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
+          ["react-dom", "virtual:1854358e727dd3548bae2b8ffdfb2c45070139e4f026cd259ce515425c9c67a1b073462c5a32df03159614f67719a9c00a2add956e9878ae47f917aa4f280bc7#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
         "linkType": "SOFT"\
@@ -5893,7 +5970,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["http-proxy-agent", "npm:7.0.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fhttp-proxy-agent%2F-%2Fhttp-proxy-agent-7.0.0.tgz"],\
           ["agent-base", "npm:7.1.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fagent-base%2F-%2Fagent-base-7.1.0.tgz"],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"]\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5904,7 +5981,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["https-proxy-agent", "npm:7.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fhttps-proxy-agent%2F-%2Fhttps-proxy-agent-7.0.2.tgz"],\
           ["agent-base", "npm:7.1.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fagent-base%2F-%2Fagent-base-7.1.0.tgz"],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"]\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6393,7 +6470,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/istanbul-lib-source-maps-npm-4.0.1-097e8d0869-10c0.zip/node_modules/istanbul-lib-source-maps/",\
         "packageDependencies": [\
           ["istanbul-lib-source-maps", "npm:4.0.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fistanbul-lib-source-maps%2F-%2Fistanbul-lib-source-maps-4.0.1.tgz"],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["istanbul-lib-coverage", "npm:3.2.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fistanbul-lib-coverage%2F-%2Fistanbul-lib-coverage-3.2.2.tgz"],\
           ["source-map", "npm:0.6.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsource-map%2F-%2Fsource-map-0.6.1.tgz"]\
         ],\
@@ -7702,7 +7779,8 @@ const RAW_RUNTIME_STATE =
           ["nano1", "workspace:apps/nano1"],\
           ["@heroicons/react", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:2.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40heroicons%2Freact%2F-%2Freact-2.1.1.tgz"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
-          ["@prometheus/env", "workspace:packages/environment"],\
+          ["@prometheus/env", "virtual:f45553a964214c3705df28f3dc48a1c4702fd77f96bb090beaa4189a5abd9ed611e20052c137ab4b33df5e4ed3518ec953d42b66304e1bec5ef86d7016419218#workspace:packages/environment"],\
+          ["@prometheus/runtime", "workspace:packages/runtime"],\
           ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
           ["@types/react-dom", "npm:18.2.19::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-dom%2F-%2Freact-dom-18.2.19.tgz"],\
           ["@typescript-eslint/eslint-plugin", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
@@ -7726,7 +7804,8 @@ const RAW_RUNTIME_STATE =
           ["nano2", "workspace:apps/nano2"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
           ["@local/ui", "workspace:packages/ui"],\
-          ["@prometheus/env", "workspace:packages/environment"],\
+          ["@prometheus/env", "virtual:f45553a964214c3705df28f3dc48a1c4702fd77f96bb090beaa4189a5abd9ed611e20052c137ab4b33df5e4ed3518ec953d42b66304e1bec5ef86d7016419218#workspace:packages/environment"],\
+          ["@prometheus/runtime", "workspace:packages/runtime"],\
           ["@sveltejs/vite-plugin-svelte", "virtual:327e94e9f03ea0813c2a8b7ace2fad5fdc47371abd20206c03461a8f22a8f7a2a536dbc227a8307e2ca90b1833f61af38dd47aaa6da914f8fe4c94902925a11d#npm:3.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40sveltejs%2Fvite-plugin-svelte%2F-%2Fvite-plugin-svelte-3.0.2.tgz"],\
           ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
           ["@types/react-dom", "npm:18.2.19::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-dom%2F-%2Freact-dom-18.2.19.tgz"],\
@@ -7751,7 +7830,8 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["nano3", "workspace:apps/nano3"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
-          ["@prometheus/env", "workspace:packages/environment"],\
+          ["@prometheus/env", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#workspace:packages/environment"],\
+          ["@prometheus/runtime", "workspace:packages/runtime"],\
           ["@sveltejs/vite-plugin-svelte", "virtual:adb4cf22f49969531b2259d55530889712f4815e321165da588a7d8c996a8bdb90f4f507d67172182b049f80ed9aa093f54e256a42a4705119478984481d2f19#npm:3.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40sveltejs%2Fvite-plugin-svelte%2F-%2Fvite-plugin-svelte-3.0.2.tgz"],\
           ["@tsconfig/svelte", "npm:5.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40tsconfig%2Fsvelte%2F-%2Fsvelte-5.0.2.tgz"],\
           ["svelte", "npm:4.2.10::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsvelte%2F-%2Fsvelte-4.2.10.tgz"],\
@@ -7769,7 +7849,8 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["nano4", "workspace:apps/nano4"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
-          ["@prometheus/env", "workspace:packages/environment"],\
+          ["@prometheus/env", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#workspace:packages/environment"],\
+          ["@prometheus/runtime", "workspace:packages/runtime"],\
           ["@vitejs/plugin-vue", "virtual:bc6b972deed4c6cb2751d67cd17f0130b89db3621c683d8bd145a9902b5344fc5b57e78f31243679e673f5440997d95420adf126e7301f1ea0fd89de494c5310#npm:4.6.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-vue%2F-%2Fplugin-vue-4.6.2.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
           ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"],\
@@ -7785,7 +7866,8 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["nano5", "workspace:apps/nano5"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
-          ["@prometheus/env", "workspace:packages/environment"],\
+          ["@prometheus/env", "virtual:f45553a964214c3705df28f3dc48a1c4702fd77f96bb090beaa4189a5abd9ed611e20052c137ab4b33df5e4ed3518ec953d42b66304e1bec5ef86d7016419218#workspace:packages/environment"],\
+          ["@prometheus/runtime", "workspace:packages/runtime"],\
           ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
           ["@types/react-dom", "npm:18.2.19::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-dom%2F-%2Freact-dom-18.2.19.tgz"],\
           ["@typescript-eslint/eslint-plugin", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
@@ -8628,11 +8710,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/react-dom-virtual-abab4ea9dd/4/.yarn/berry/cache/react-dom-npm-18.2.0-3b01f06bb5-10c0.zip/node_modules/react-dom/",\
+      ["virtual:1854358e727dd3548bae2b8ffdfb2c45070139e4f026cd259ce515425c9c67a1b073462c5a32df03159614f67719a9c00a2add956e9878ae47f917aa4f280bc7#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/react-dom-virtual-5bab015d6a/4/.yarn/berry/cache/react-dom-npm-18.2.0-3b01f06bb5-10c0.zip/node_modules/react-dom/",\
         "packageDependencies": [\
-          ["react-dom", "virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
-          ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
+          ["react-dom", "virtual:1854358e727dd3548bae2b8ffdfb2c45070139e4f026cd259ce515425c9c67a1b073462c5a32df03159614f67719a9c00a2add956e9878ae47f917aa4f280bc7#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
+          ["@types/react", null],\
           ["loose-envify", "npm:1.4.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Floose-envify%2F-%2Floose-envify-1.4.0.tgz"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
           ["scheduler", "npm:0.23.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fscheduler%2F-%2Fscheduler-0.23.0.tgz"]\
@@ -8643,11 +8725,11 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:ea9010a8d940bd683aa1940d089b8cdbe2bd867e8f1846a31afeae15b6c5423c6c8ed46e92eeaa4f9f27f2c4642e2b23ecb0712176b54c1d89728ba4f23046a0#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/react-dom-virtual-0eff3cb7ad/4/.yarn/berry/cache/react-dom-npm-18.2.0-3b01f06bb5-10c0.zip/node_modules/react-dom/",\
+      ["virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/react-dom-virtual-abab4ea9dd/4/.yarn/berry/cache/react-dom-npm-18.2.0-3b01f06bb5-10c0.zip/node_modules/react-dom/",\
         "packageDependencies": [\
-          ["react-dom", "virtual:ea9010a8d940bd683aa1940d089b8cdbe2bd867e8f1846a31afeae15b6c5423c6c8ed46e92eeaa4f9f27f2c4642e2b23ecb0712176b54c1d89728ba4f23046a0#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
-          ["@types/react", null],\
+          ["react-dom", "virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
+          ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
           ["loose-envify", "npm:1.4.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Floose-envify%2F-%2Floose-envify-1.4.0.tgz"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
           ["scheduler", "npm:0.23.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fscheduler%2F-%2Fscheduler-0.23.0.tgz"]\
@@ -9159,7 +9241,8 @@ const RAW_RUNTIME_STATE =
           ["shell", "workspace:apps/shell"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
           ["@local/sdk", "workspace:packages/sdk"],\
-          ["@prometheus/env", "workspace:packages/environment"],\
+          ["@prometheus/env", "virtual:f45553a964214c3705df28f3dc48a1c4702fd77f96bb090beaa4189a5abd9ed611e20052c137ab4b33df5e4ed3518ec953d42b66304e1bec5ef86d7016419218#workspace:packages/environment"],\
+          ["@prometheus/runtime", "workspace:packages/runtime"],\
           ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
           ["@types/react-dom", "npm:18.2.19::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-dom%2F-%2Freact-dom-18.2.19.tgz"],\
           ["@typescript-eslint/eslint-plugin", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
@@ -9239,7 +9322,8 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["slim", "workspace:apps/slim"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
-          ["@prometheus/env", "workspace:packages/environment"],\
+          ["@prometheus/env", "virtual:f45553a964214c3705df28f3dc48a1c4702fd77f96bb090beaa4189a5abd9ed611e20052c137ab4b33df5e4ed3518ec953d42b66304e1bec5ef86d7016419218#workspace:packages/environment"],\
+          ["@prometheus/runtime", "workspace:packages/runtime"],\
           ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
           ["@types/react-dom", "npm:18.2.19::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-dom%2F-%2Freact-dom-18.2.19.tgz"],\
           ["@typescript-eslint/eslint-plugin", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
@@ -9282,7 +9366,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["socks-proxy-agent", "npm:8.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsocks-proxy-agent%2F-%2Fsocks-proxy-agent-8.0.2.tgz"],\
           ["agent-base", "npm:7.1.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fagent-base%2F-%2Fagent-base-7.1.0.tgz"],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["socks", "npm:2.7.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsocks%2F-%2Fsocks-2.7.1.tgz"]\
         ],\
         "linkType": "HARD"\
@@ -9392,10 +9476,11 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["started", "workspace:apps/gettingStarted"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
-          ["@prometheus/env", "workspace:packages/environment"],\
+          ["@prometheus/env", "virtual:ea9010a8d940bd683aa1940d089b8cdbe2bd867e8f1846a31afeae15b6c5423c6c8ed46e92eeaa4f9f27f2c4642e2b23ecb0712176b54c1d89728ba4f23046a0#workspace:packages/environment"],\
+          ["@prometheus/runtime", "workspace:packages/runtime"],\
           ["prism-react-renderer", "virtual:69c89d3c28f292944f5d734b8db5ef1787896fc0dada54747d5bed7ccb25912ae684cb603c6845983658e0ebea463ae1c7a4b3e2c67cec97d2673c7a0bcac231#npm:2.3.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fprism-react-renderer%2F-%2Fprism-react-renderer-2.3.1.tgz"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
-          ["react-dom", "virtual:ea9010a8d940bd683aa1940d089b8cdbe2bd867e8f1846a31afeae15b6c5423c6c8ed46e92eeaa4f9f27f2c4642e2b23ecb0712176b54c1d89728ba4f23046a0#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
+          ["react-dom", "virtual:1854358e727dd3548bae2b8ffdfb2c45070139e4f026cd259ce515425c9c67a1b073462c5a32df03159614f67719a9c00a2add956e9878ae47f917aa4f280bc7#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
         "linkType": "SOFT"\
@@ -10081,7 +10166,7 @@ const RAW_RUNTIME_STATE =
           ["bundle-require", "virtual:d133f17f70c0d670739ecb5c001d2f1118f92a558ca469c98292b6005fc7e7b7337fc340f63518ed6a6e1d1fb5c68c6923601c2450be7764dc83d4aa0245febc#npm:4.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fbundle-require%2F-%2Fbundle-require-4.0.2.tgz"],\
           ["cac", "npm:6.7.14::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fcac%2F-%2Fcac-6.7.14.tgz"],\
           ["chokidar", "npm:3.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fchokidar%2F-%2Fchokidar-3.6.0.tgz"],\
-          ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
+          ["debug", "virtual:e63adf4be7c579904625fff6eab9179c91dffa57f7be0a77966156b7a5edc63e788286cf9a627ec943142ea6bc1326ee4af2bfd0bc73c898aa26edcc44eeb2ba#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["esbuild", "npm:0.19.12::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fesbuild%2F-%2Fesbuild-0.19.12.tgz"],\
           ["execa", "npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fexeca%2F-%2Fexeca-5.1.1.tgz"],\
           ["globby", "npm:11.1.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fglobby%2F-%2Fglobby-11.1.0.tgz"],\

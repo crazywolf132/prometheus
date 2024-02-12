@@ -18,6 +18,7 @@
     "@local/prometheus": "workspace:^",
     "@local/ui": "workspace:^",
     "@prometheus/env": "workspace:^",
+    "@prometheus/runtime": "workspace:^",
     "@sveltejs/vite-plugin-svelte": "^3.0.2",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",

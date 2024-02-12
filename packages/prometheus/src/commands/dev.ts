@@ -29,11 +29,27 @@ export default {
     action: async (args: any) => {
 
         let name = "development";
+
+        // Starting the server so it is ready by the time the page loads
+        localServer.action("dist/main.umd.cjs", { full: false});
         
         const foundShell = hasShell();
         let external = !foundShell;
         log.info("Development mode starting", "has shell?", foundShell)
-        const basePath = execSync(`node -e "console.log(require.resolve('@prometheus/env'))"`, { encoding: 'utf-8' }).trim().split("/").slice(0, -1).join("/");
+        let basePath = execSync(`node -e "console.log(require.resolve('@prometheus/env'))"`, { encoding: 'utf-8' }).trim().split("/").slice(0, -2).join("/");
+        log.info("Base path", "location", basePath)
+
+        // Seeing as we are using yarn in this repo, we will create a `.prometheus` folder which will have the shell code.
+        // This will allow us to use the shell code from the local project.
+        if (!foundShell) {
+            // We are going to copy everything from the basePath to the `.prometheus` folder.
+            fs.mkdirSync(".prometheus/dist", { recursive: true });
+            fs.mkdirSync(".prometheus/public/assets", { recursive: true });
+            fs.copyFileSync(`${basePath}/index.html`, ".prometheus/index.html");
+            fs.copyFileSync(`${basePath}/dist/main.js`, ".prometheus/dist/main.js");
+            fs.copyFileSync(`${basePath}/public/assets/spinner.gif`, ".prometheus/public/assets/spinner.gif");
+            basePath = ".prometheus";
+        }
 
         const toExternalise: string[] = external ? [
             ...getExternals()
@@ -53,9 +69,8 @@ export default {
         // If we are using the shell from prometheus, we are actually going to spin up a build
         // and a server at the same time.
         build.action("dev", { external: true });
-        localServer.action("dist/main.umd.cjs", { full: false});
-
         await server.listen();
+        
         fs.watch("./src", { recursive: true}, () => {
             (build.action("dev", { external: true }) as Promise<any>).then(() => {
                 server.ws.send({

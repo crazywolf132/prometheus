@@ -12,6 +12,7 @@
   "devDependencies": {
     "@local/prometheus": "workspace:^",
     "@prometheus/env": "workspace:^",
+    "@prometheus/runtime": "workspace:^",
     "@sveltejs/vite-plugin-svelte": "^3.0.2",
     "@tsconfig/svelte": "^5.0.2",
     "svelte": "^4.2.10",

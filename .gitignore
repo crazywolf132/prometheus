@@ -14,3 +14,5 @@ turbo-build.log
 !.yarn/versions
 
 .prometheus/*
+.prometheus
+.DS_Store

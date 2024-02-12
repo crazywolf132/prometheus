@@ -15,6 +15,7 @@
   "devDependencies": {
     "@local/prometheus": "workspace:^",
     "@prometheus/env": "workspace:^",
+    "@prometheus/runtime": "workspace:^",
     "@vitejs/plugin-vue": "^4.5.2",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
