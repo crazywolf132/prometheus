@@ -5396,6 +5396,7 @@ __metadata:
   resolution: "landing@workspace:apps/landing"
   dependencies:
     "@headlessui/react": "npm:^1.7.18"
+    "@heroicons/react": "npm:^2.1.1"
     "@local/prometheus": "workspace:^"
     "@prometheus/runtime": "workspace:^"
     "@tailwindcss/typography": "npm:^0.5.10"

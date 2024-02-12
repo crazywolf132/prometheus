@@ -1316,10 +1316,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:f45553a964214c3705df28f3dc48a1c4702fd77f96bb090beaa4189a5abd9ed611e20052c137ab4b33df5e4ed3518ec953d42b66304e1bec5ef86d7016419218#npm:2.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40heroicons%2Freact%2F-%2Freact-2.1.1.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/@heroicons-react-virtual-c52a749bf4/4/.yarn/berry/cache/@heroicons-react-npm-2.1.1-ee001f6918-10c0.zip/node_modules/@heroicons/react/",\
+      ["virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:2.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40heroicons%2Freact%2F-%2Freact-2.1.1.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/@heroicons-react-virtual-2308d9b36f/4/.yarn/berry/cache/@heroicons-react-npm-2.1.1-ee001f6918-10c0.zip/node_modules/@heroicons/react/",\
         "packageDependencies": [\
-          ["@heroicons/react", "virtual:f45553a964214c3705df28f3dc48a1c4702fd77f96bb090beaa4189a5abd9ed611e20052c137ab4b33df5e4ed3518ec953d42b66304e1bec5ef86d7016419218#npm:2.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40heroicons%2Freact%2F-%2Freact-2.1.1.tgz"],\
+          ["@heroicons/react", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:2.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40heroicons%2Freact%2F-%2Freact-2.1.1.tgz"],\
           ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"]\
         ],\
@@ -7120,6 +7120,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["landing", "workspace:apps/landing"],\
           ["@headlessui/react", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:1.7.18::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40headlessui%2Freact%2F-%2Freact-1.7.18.tgz"],\
+          ["@heroicons/react", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:2.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40heroicons%2Freact%2F-%2Freact-2.1.1.tgz"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
           ["@prometheus/runtime", "workspace:packages/runtime"],\
           ["@tailwindcss/typography", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:0.5.10::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40tailwindcss%2Ftypography%2F-%2Ftypography-0.5.10.tgz"],\
@@ -7725,7 +7726,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./apps/nano1/",\
         "packageDependencies": [\
           ["nano1", "workspace:apps/nano1"],\
-          ["@heroicons/react", "virtual:f45553a964214c3705df28f3dc48a1c4702fd77f96bb090beaa4189a5abd9ed611e20052c137ab4b33df5e4ed3518ec953d42b66304e1bec5ef86d7016419218#npm:2.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40heroicons%2Freact%2F-%2Freact-2.1.1.tgz"],\
+          ["@heroicons/react", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:2.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40heroicons%2Freact%2F-%2Freact-2.1.1.tgz"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
           ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
           ["@types/react-dom", "npm:18.2.19::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-dom%2F-%2Freact-dom-18.2.19.tgz"],\
