@@ -1770,7 +1770,6 @@ const RAW_RUNTIME_STATE =
           ["prop-types", "npm:15.8.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fprop-types%2F-%2Fprop-types-15.8.1.tgz"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
           ["react-dom", "virtual:1854358e727dd3548bae2b8ffdfb2c45070139e4f026cd259ce515425c9c67a1b073462c5a32df03159614f67719a9c00a2add956e9878ae47f917aa4f280bc7#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
-          ["react-lottie", "virtual:3fd78f4028377f2f0baa2fa0d0fa009741a16d9dd75c1ad326c8ac2295e18f9471693bf89199cf8bac8071e2aa8c9f18ffaa7c2019c62938f3aea06f3c618a4f#npm:1.2.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-lottie%2F-%2Freact-lottie-1.2.4.tgz"],\
           ["tseep", "npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Ftseep%2F-%2Ftseep-1.2.1.tgz"],\
           ["tsup", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:8.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Ftsup%2F-%2Ftsup-8.0.2.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
@@ -1968,13 +1967,11 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.11.17::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Fnode%2F-%2Fnode-20.11.17.tgz"],\
           ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
           ["@types/react-dom", "npm:18.2.19::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-dom%2F-%2Freact-dom-18.2.19.tgz"],\
-          ["@types/react-lottie", "npm:1.2.10::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-lottie%2F-%2Freact-lottie-1.2.10.tgz"],\
           ["clone-or-create", "virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:1.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fclone-or-create%2F-%2Fclone-or-create-1.0.2.tgz"],\
           ["jest", "virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:29.7.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fjest%2F-%2Fjest-29.7.0.tgz"],\
           ["prop-types", "npm:15.8.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fprop-types%2F-%2Fprop-types-15.8.1.tgz"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
           ["react-dom", "virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
-          ["react-lottie", "virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:1.2.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-lottie%2F-%2Freact-lottie-1.2.4.tgz"],\
           ["ts-jest", "virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:29.1.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-jest%2F-%2Fts-jest-29.1.2.tgz"],\
           ["tsup", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:8.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Ftsup%2F-%2Ftsup-8.0.2.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
@@ -2889,16 +2886,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/@types-react-dom-npm-18.2.19-81e6b475cc-10c0.zip/node_modules/@types/react-dom/",\
         "packageDependencies": [\
           ["@types/react-dom", "npm:18.2.19::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-dom%2F-%2Freact-dom-18.2.19.tgz"],\
-          ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@types/react-lottie", [\
-      ["npm:1.2.10::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-lottie%2F-%2Freact-lottie-1.2.10.tgz", {\
-        "packageLocation": "../../../.yarn/berry/cache/@types-react-lottie-npm-1.2.10-fbee12652b-10c0.zip/node_modules/@types/react-lottie/",\
-        "packageDependencies": [\
-          ["@types/react-lottie", "npm:1.2.10::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-lottie%2F-%2Freact-lottie-1.2.10.tgz"],\
           ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"]\
         ],\
         "linkType": "HARD"\
@@ -3946,17 +3933,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["babel-runtime", [\
-      ["npm:6.26.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fbabel-runtime%2F-%2Fbabel-runtime-6.26.0.tgz", {\
-        "packageLocation": "../../../.yarn/berry/cache/babel-runtime-npm-6.26.0-56019c4b7a-10c0.zip/node_modules/babel-runtime/",\
-        "packageDependencies": [\
-          ["babel-runtime", "npm:6.26.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fbabel-runtime%2F-%2Fbabel-runtime-6.26.0.tgz"],\
-          ["core-js", "npm:2.6.12::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fcore-js%2F-%2Fcore-js-2.6.12.tgz"],\
-          ["regenerator-runtime", "npm:0.11.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fregenerator-runtime%2F-%2Fregenerator-runtime-0.11.1.tgz"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["bakery", [\
       ["workspace:.", {\
         "packageLocation": "./",\
@@ -4520,15 +4496,6 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/cookie-signature-npm-1.0.6-aa412fb71d-10c0.zip/node_modules/cookie-signature/",\
         "packageDependencies": [\
           ["cookie-signature", "npm:1.0.6::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fcookie-signature%2F-%2Fcookie-signature-1.0.6.tgz"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["core-js", [\
-      ["npm:2.6.12::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fcore-js%2F-%2Fcore-js-2.6.12.tgz", {\
-        "packageLocation": "./.yarn/unplugged/core-js-npm-2.6.12-a13f0d190f/node_modules/core-js/",\
-        "packageDependencies": [\
-          ["core-js", "npm:2.6.12::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fcore-js%2F-%2Fcore-js-2.6.12.tgz"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7363,15 +7330,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["lottie-web", [\
-      ["npm:5.12.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Flottie-web%2F-%2Flottie-web-5.12.2.tgz", {\
-        "packageLocation": "../../../.yarn/berry/cache/lottie-web-npm-5.12.2-2cb501adb6-10c0.zip/node_modules/lottie-web/",\
-        "packageDependencies": [\
-          ["lottie-web", "npm:5.12.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Flottie-web%2F-%2Flottie-web-5.12.2.tgz"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["lru-cache", [\
       ["npm:10.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Flru-cache%2F-%2Flru-cache-10.2.0.tgz", {\
         "packageLocation": "../../../.yarn/berry/cache/lru-cache-npm-10.2.0-decb391651-10c0.zip/node_modules/lru-cache/",\
@@ -8764,45 +8722,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["react-lottie", [\
-      ["npm:1.2.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-lottie%2F-%2Freact-lottie-1.2.4.tgz", {\
-        "packageLocation": "../../../.yarn/berry/cache/react-lottie-npm-1.2.4-d454d4d620-10c0.zip/node_modules/react-lottie/",\
-        "packageDependencies": [\
-          ["react-lottie", "npm:1.2.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-lottie%2F-%2Freact-lottie-1.2.4.tgz"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:3fd78f4028377f2f0baa2fa0d0fa009741a16d9dd75c1ad326c8ac2295e18f9471693bf89199cf8bac8071e2aa8c9f18ffaa7c2019c62938f3aea06f3c618a4f#npm:1.2.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-lottie%2F-%2Freact-lottie-1.2.4.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/react-lottie-virtual-5f38826c7b/4/.yarn/berry/cache/react-lottie-npm-1.2.4-d454d4d620-10c0.zip/node_modules/react-lottie/",\
-        "packageDependencies": [\
-          ["react-lottie", "virtual:3fd78f4028377f2f0baa2fa0d0fa009741a16d9dd75c1ad326c8ac2295e18f9471693bf89199cf8bac8071e2aa8c9f18ffaa7c2019c62938f3aea06f3c618a4f#npm:1.2.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-lottie%2F-%2Freact-lottie-1.2.4.tgz"],\
-          ["@types/react", null],\
-          ["babel-runtime", "npm:6.26.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fbabel-runtime%2F-%2Fbabel-runtime-6.26.0.tgz"],\
-          ["lottie-web", "npm:5.12.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Flottie-web%2F-%2Flottie-web-5.12.2.tgz"],\
-          ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"]\
-        ],\
-        "packagePeers": [\
-          "@types/react",\
-          "react"\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:1.2.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-lottie%2F-%2Freact-lottie-1.2.4.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/react-lottie-virtual-dd2f3366ca/4/.yarn/berry/cache/react-lottie-npm-1.2.4-d454d4d620-10c0.zip/node_modules/react-lottie/",\
-        "packageDependencies": [\
-          ["react-lottie", "virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:1.2.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-lottie%2F-%2Freact-lottie-1.2.4.tgz"],\
-          ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
-          ["babel-runtime", "npm:6.26.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fbabel-runtime%2F-%2Fbabel-runtime-6.26.0.tgz"],\
-          ["lottie-web", "npm:5.12.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Flottie-web%2F-%2Flottie-web-5.12.2.tgz"],\
-          ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"]\
-        ],\
-        "packagePeers": [\
-          "@types/react",\
-          "react"\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["react-refresh", [\
       ["npm:0.14.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-refresh%2F-%2Freact-refresh-0.14.0.tgz", {\
         "packageLocation": "../../../.yarn/berry/cache/react-refresh-npm-0.14.0-6411756b2b-10c0.zip/node_modules/react-refresh/",\
@@ -8895,13 +8814,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["regenerator-runtime", [\
-      ["npm:0.11.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fregenerator-runtime%2F-%2Fregenerator-runtime-0.11.1.tgz", {\
-        "packageLocation": "../../../.yarn/berry/cache/regenerator-runtime-npm-0.11.1-70e63170e0-10c0.zip/node_modules/regenerator-runtime/",\
-        "packageDependencies": [\
-          ["regenerator-runtime", "npm:0.11.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fregenerator-runtime%2F-%2Fregenerator-runtime-0.11.1.tgz"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:0.14.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fregenerator-runtime%2F-%2Fregenerator-runtime-0.14.1.tgz", {\
         "packageLocation": "../../../.yarn/berry/cache/regenerator-runtime-npm-0.14.1-9b90d3d0fd-10c0.zip/node_modules/regenerator-runtime/",\
         "packageDependencies": [\
