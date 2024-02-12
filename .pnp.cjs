@@ -18,10 +18,6 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:apps/about"\
     },\
     {\
-      "name": "container",\
-      "reference": "workspace:apps/container"\
-    },\
-    {\
       "name": "extreme",\
       "reference": "workspace:apps/extreme"\
     },\
@@ -97,7 +93,6 @@ const RAW_RUNTIME_STATE =
     ["@prometheus/runtime", ["workspace:packages/runtime"]],\
     ["about", ["workspace:apps/about"]],\
     ["bakery", ["workspace:."]],\
-    ["container", ["workspace:apps/container"]],\
     ["extreme", ["workspace:apps/extreme"]],\
     ["landing", ["workspace:apps/landing"]],\
     ["nano1", ["workspace:apps/nano1"]],\
@@ -1742,6 +1737,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./packages/prometheus/",\
         "packageDependencies": [\
           ["@local/prometheus", "workspace:packages/prometheus"],\
+          ["@prometheus/env", "workspace:packages/environment"],\
           ["@sveltejs/vite-plugin-svelte", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:3.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40sveltejs%2Fvite-plugin-svelte%2F-%2Fvite-plugin-svelte-3.0.2.tgz"],\
           ["@types/cors", "npm:2.8.17::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Fcors%2F-%2Fcors-2.8.17.tgz"],\
           ["@types/express", "npm:4.17.21::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Fexpress%2F-%2Fexpress-4.17.21.tgz"],\
@@ -2088,7 +2084,7 @@ const RAW_RUNTIME_STATE =
           ["magic-string", "npm:0.30.7::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fmagic-string%2F-%2Fmagic-string-0.30.7.tgz"],\
           ["svelte", null],\
           ["svelte-hmr", "virtual:0b55658376cab752bfc7bd56b679365f88fd3bd6b424071dd49411cd270ac70eeec356c0a3ea85b60d1b9c2d11063f6bbabdaadc3ded03e10c557674a84498b5#npm:0.15.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsvelte-hmr%2F-%2Fsvelte-hmr-0.15.3.tgz"],\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"],\
+          ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"],\
           ["vitefu", "virtual:0b55658376cab752bfc7bd56b679365f88fd3bd6b424071dd49411cd270ac70eeec356c0a3ea85b60d1b9c2d11063f6bbabdaadc3ded03e10c557674a84498b5#npm:0.2.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvitefu%2F-%2Fvitefu-0.2.5.tgz"]\
         ],\
         "packagePeers": [\
@@ -2136,7 +2132,7 @@ const RAW_RUNTIME_STATE =
           ["magic-string", "npm:0.30.7::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fmagic-string%2F-%2Fmagic-string-0.30.7.tgz"],\
           ["svelte", "npm:4.2.10::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsvelte%2F-%2Fsvelte-4.2.10.tgz"],\
           ["svelte-hmr", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:0.15.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsvelte-hmr%2F-%2Fsvelte-hmr-0.15.3.tgz"],\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"],\
+          ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"],\
           ["vitefu", "virtual:0b55658376cab752bfc7bd56b679365f88fd3bd6b424071dd49411cd270ac70eeec356c0a3ea85b60d1b9c2d11063f6bbabdaadc3ded03e10c557674a84498b5#npm:0.2.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvitefu%2F-%2Fvitefu-0.2.5.tgz"]\
         ],\
         "packagePeers": [\
@@ -2166,7 +2162,7 @@ const RAW_RUNTIME_STATE =
           ["@types/vite", null],\
           ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["svelte", null],\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
+          ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
         ],\
         "packagePeers": [\
           "@sveltejs/vite-plugin-svelte",\
@@ -2210,7 +2206,7 @@ const RAW_RUNTIME_STATE =
           ["@types/vite", null],\
           ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["svelte", "npm:4.2.10::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsvelte%2F-%2Fsvelte-4.2.10.tgz"],\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
+          ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
         ],\
         "packagePeers": [\
           "@sveltejs/vite-plugin-svelte",\
@@ -2919,18 +2915,18 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-eslint-plugin-virtual-9c0b0eca51/4/.yarn/berry/cache/@typescript-eslint-eslint-plugin-npm-6.21.0-4ff4620816-10c0.zip/node_modules/@typescript-eslint/eslint-plugin/",\
+      ["virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-eslint-plugin-virtual-0b003fc69c/4/.yarn/berry/cache/@typescript-eslint-eslint-plugin-npm-6.21.0-4ff4620816-10c0.zip/node_modules/@typescript-eslint/eslint-plugin/",\
         "packageDependencies": [\
-          ["@typescript-eslint/eslint-plugin", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
+          ["@typescript-eslint/eslint-plugin", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
           ["@eslint-community/regexpp", "npm:4.10.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40eslint-community%2Fregexpp%2F-%2Fregexpp-4.10.0.tgz"],\
           ["@types/eslint", null],\
           ["@types/typescript", null],\
           ["@types/typescript-eslint__parser", null],\
-          ["@typescript-eslint/parser", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
+          ["@typescript-eslint/parser", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
           ["@typescript-eslint/scope-manager", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fscope-manager%2F-%2Fscope-manager-6.21.0.tgz"],\
-          ["@typescript-eslint/type-utils", "virtual:9c0b0eca5144631708ca66110450965a510e883e6bf92bce8f6b6c89fc0adf131a91c746f6ffa7660922c73c17e38a4a9dadc6229ed7d383382d42c2f6765a52#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftype-utils%2F-%2Ftype-utils-6.21.0.tgz"],\
-          ["@typescript-eslint/utils", "virtual:9c0b0eca5144631708ca66110450965a510e883e6bf92bce8f6b6c89fc0adf131a91c746f6ffa7660922c73c17e38a4a9dadc6229ed7d383382d42c2f6765a52#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Futils%2F-%2Futils-6.21.0.tgz"],\
+          ["@typescript-eslint/type-utils", "virtual:0b003fc69c1f97691a69ad7581bfa01833e7e0b5b2852b21b74145f71b7393af8669cca826382b7b9a3ac092b552c60958998acf0e0781d649794b2f862760a8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftype-utils%2F-%2Ftype-utils-6.21.0.tgz"],\
+          ["@typescript-eslint/utils", "virtual:0b003fc69c1f97691a69ad7581bfa01833e7e0b5b2852b21b74145f71b7393af8669cca826382b7b9a3ac092b552c60958998acf0e0781d649794b2f862760a8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Futils%2F-%2Futils-6.21.0.tgz"],\
           ["@typescript-eslint/visitor-keys", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fvisitor-keys%2F-%2Fvisitor-keys-6.21.0.tgz"],\
           ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["eslint", "npm:8.56.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint%2F-%2Feslint-8.56.0.tgz"],\
@@ -2938,7 +2934,7 @@ const RAW_RUNTIME_STATE =
           ["ignore", "npm:5.3.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fignore%2F-%2Fignore-5.3.1.tgz"],\
           ["natural-compare", "npm:1.4.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fnatural-compare%2F-%2Fnatural-compare-1.4.0.tgz"],\
           ["semver", "npm:7.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsemver%2F-%2Fsemver-7.6.0.tgz"],\
-          ["ts-api-utils", "virtual:9c0b0eca5144631708ca66110450965a510e883e6bf92bce8f6b6c89fc0adf131a91c746f6ffa7660922c73c17e38a4a9dadc6229ed7d383382d42c2f6765a52#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz"],\
+          ["ts-api-utils", "virtual:0b003fc69c1f97691a69ad7581bfa01833e7e0b5b2852b21b74145f71b7393af8669cca826382b7b9a3ac092b552c60958998acf0e0781d649794b2f862760a8#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
         "packagePeers": [\
@@ -2960,15 +2956,15 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-parser-virtual-7c0bdec503/4/.yarn/berry/cache/@typescript-eslint-parser-npm-6.21.0-52c3920ab1-10c0.zip/node_modules/@typescript-eslint/parser/",\
+      ["virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-parser-virtual-5fc03e7f30/4/.yarn/berry/cache/@typescript-eslint-parser-npm-6.21.0-52c3920ab1-10c0.zip/node_modules/@typescript-eslint/parser/",\
         "packageDependencies": [\
-          ["@typescript-eslint/parser", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
+          ["@typescript-eslint/parser", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
           ["@types/eslint", null],\
           ["@types/typescript", null],\
           ["@typescript-eslint/scope-manager", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fscope-manager%2F-%2Fscope-manager-6.21.0.tgz"],\
           ["@typescript-eslint/types", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypes%2F-%2Ftypes-6.21.0.tgz"],\
-          ["@typescript-eslint/typescript-estree", "virtual:6f83416038d034b074b8fa37bf16138c79e47a445993db3e72520ea8b612ca58ef3f637e2fe07121c923a795cd97d578476bbfc3b29fd2dc3e4e72c326f2e4ca#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-6.21.0.tgz"],\
+          ["@typescript-eslint/typescript-estree", "virtual:c96b1fcebc6c89b5aa732b63683b9c53a55fdbb8e83208a65e4093c60af8f60c4e35e2ad7e1cb60cee669020da94ba70f429621b31e44e16ef1883e674939b35#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-6.21.0.tgz"],\
           ["@typescript-eslint/visitor-keys", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fvisitor-keys%2F-%2Fvisitor-keys-6.21.0.tgz"],\
           ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["eslint", "npm:8.56.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint%2F-%2Feslint-8.56.0.tgz"],\
@@ -3002,17 +2998,17 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:9c0b0eca5144631708ca66110450965a510e883e6bf92bce8f6b6c89fc0adf131a91c746f6ffa7660922c73c17e38a4a9dadc6229ed7d383382d42c2f6765a52#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftype-utils%2F-%2Ftype-utils-6.21.0.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-type-utils-virtual-6f83416038/4/.yarn/berry/cache/@typescript-eslint-type-utils-npm-6.21.0-911787820c-10c0.zip/node_modules/@typescript-eslint/type-utils/",\
+      ["virtual:0b003fc69c1f97691a69ad7581bfa01833e7e0b5b2852b21b74145f71b7393af8669cca826382b7b9a3ac092b552c60958998acf0e0781d649794b2f862760a8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftype-utils%2F-%2Ftype-utils-6.21.0.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-type-utils-virtual-c96b1fcebc/4/.yarn/berry/cache/@typescript-eslint-type-utils-npm-6.21.0-911787820c-10c0.zip/node_modules/@typescript-eslint/type-utils/",\
         "packageDependencies": [\
-          ["@typescript-eslint/type-utils", "virtual:9c0b0eca5144631708ca66110450965a510e883e6bf92bce8f6b6c89fc0adf131a91c746f6ffa7660922c73c17e38a4a9dadc6229ed7d383382d42c2f6765a52#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftype-utils%2F-%2Ftype-utils-6.21.0.tgz"],\
+          ["@typescript-eslint/type-utils", "virtual:0b003fc69c1f97691a69ad7581bfa01833e7e0b5b2852b21b74145f71b7393af8669cca826382b7b9a3ac092b552c60958998acf0e0781d649794b2f862760a8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftype-utils%2F-%2Ftype-utils-6.21.0.tgz"],\
           ["@types/eslint", null],\
           ["@types/typescript", null],\
-          ["@typescript-eslint/typescript-estree", "virtual:6f83416038d034b074b8fa37bf16138c79e47a445993db3e72520ea8b612ca58ef3f637e2fe07121c923a795cd97d578476bbfc3b29fd2dc3e4e72c326f2e4ca#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-6.21.0.tgz"],\
-          ["@typescript-eslint/utils", "virtual:9c0b0eca5144631708ca66110450965a510e883e6bf92bce8f6b6c89fc0adf131a91c746f6ffa7660922c73c17e38a4a9dadc6229ed7d383382d42c2f6765a52#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Futils%2F-%2Futils-6.21.0.tgz"],\
+          ["@typescript-eslint/typescript-estree", "virtual:c96b1fcebc6c89b5aa732b63683b9c53a55fdbb8e83208a65e4093c60af8f60c4e35e2ad7e1cb60cee669020da94ba70f429621b31e44e16ef1883e674939b35#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-6.21.0.tgz"],\
+          ["@typescript-eslint/utils", "virtual:0b003fc69c1f97691a69ad7581bfa01833e7e0b5b2852b21b74145f71b7393af8669cca826382b7b9a3ac092b552c60958998acf0e0781d649794b2f862760a8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Futils%2F-%2Futils-6.21.0.tgz"],\
           ["debug", "virtual:c784e9ac758c60aaf811ea705b103e9c81e68b1d10d4956455ce47cb623d9436e00ad747f74425fe0d8590251bae11f4ecf4fd8eb1a6c0a16ae78684f99a0a03#npm:4.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fdebug%2F-%2Fdebug-4.3.4.tgz"],\
           ["eslint", "npm:8.56.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint%2F-%2Feslint-8.56.0.tgz"],\
-          ["ts-api-utils", "virtual:9c0b0eca5144631708ca66110450965a510e883e6bf92bce8f6b6c89fc0adf131a91c746f6ffa7660922c73c17e38a4a9dadc6229ed7d383382d42c2f6765a52#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz"],\
+          ["ts-api-utils", "virtual:0b003fc69c1f97691a69ad7581bfa01833e7e0b5b2852b21b74145f71b7393af8669cca826382b7b9a3ac092b552c60958998acf0e0781d649794b2f862760a8#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
         "packagePeers": [\
@@ -3041,10 +3037,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:6f83416038d034b074b8fa37bf16138c79e47a445993db3e72520ea8b612ca58ef3f637e2fe07121c923a795cd97d578476bbfc3b29fd2dc3e4e72c326f2e4ca#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-6.21.0.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-typescript-estree-virtual-839e64672b/4/.yarn/berry/cache/@typescript-eslint-typescript-estree-npm-6.21.0-6f564b8f29-10c0.zip/node_modules/@typescript-eslint/typescript-estree/",\
+      ["virtual:2e37b6e03721610da6113fec0039d2a5dd2428a7b35206865a358dcd29e65500ef6a826c8fce0c3be7d869b435b4328ed7426ddb7f1e4e025c2c44ad601f6c06#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-6.21.0.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-typescript-estree-virtual-35679feac1/4/.yarn/berry/cache/@typescript-eslint-typescript-estree-npm-6.21.0-6f564b8f29-10c0.zip/node_modules/@typescript-eslint/typescript-estree/",\
         "packageDependencies": [\
-          ["@typescript-eslint/typescript-estree", "virtual:6f83416038d034b074b8fa37bf16138c79e47a445993db3e72520ea8b612ca58ef3f637e2fe07121c923a795cd97d578476bbfc3b29fd2dc3e4e72c326f2e4ca#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-6.21.0.tgz"],\
+          ["@typescript-eslint/typescript-estree", "virtual:2e37b6e03721610da6113fec0039d2a5dd2428a7b35206865a358dcd29e65500ef6a826c8fce0c3be7d869b435b4328ed7426ddb7f1e4e025c2c44ad601f6c06#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-6.21.0.tgz"],\
           ["@types/typescript", null],\
           ["@typescript-eslint/types", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypes%2F-%2Ftypes-6.21.0.tgz"],\
           ["@typescript-eslint/visitor-keys", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fvisitor-keys%2F-%2Fvisitor-keys-6.21.0.tgz"],\
@@ -3053,8 +3049,8 @@ const RAW_RUNTIME_STATE =
           ["is-glob", "npm:4.0.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fis-glob%2F-%2Fis-glob-4.0.3.tgz"],\
           ["minimatch", "npm:9.0.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fminimatch%2F-%2Fminimatch-9.0.3.tgz"],\
           ["semver", "npm:7.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsemver%2F-%2Fsemver-7.6.0.tgz"],\
-          ["ts-api-utils", "virtual:9c0b0eca5144631708ca66110450965a510e883e6bf92bce8f6b6c89fc0adf131a91c746f6ffa7660922c73c17e38a4a9dadc6229ed7d383382d42c2f6765a52#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz"],\
-          ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
+          ["ts-api-utils", "virtual:35679feac1d63fc39b57ff96d05030486dae660d7524aba9b675021e228bd8abd3e8502ceb7237853c9f664435be85d3814b5e35fb7fb27f16573954aae0bf27#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz"],\
+          ["typescript", null]\
         ],\
         "packagePeers": [\
           "@types/typescript",\
@@ -3062,10 +3058,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:da3498500feadd817a96b6977ef5ca2f270d9c450ba2e7d021af26a772c5f5a9879dcf09eaa7082ff6f48a79bef5e0e7a07fc7c35142c9ad97b1c8187ff374f5#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-6.21.0.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-typescript-estree-virtual-69ac960dfa/4/.yarn/berry/cache/@typescript-eslint-typescript-estree-npm-6.21.0-6f564b8f29-10c0.zip/node_modules/@typescript-eslint/typescript-estree/",\
+      ["virtual:c96b1fcebc6c89b5aa732b63683b9c53a55fdbb8e83208a65e4093c60af8f60c4e35e2ad7e1cb60cee669020da94ba70f429621b31e44e16ef1883e674939b35#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-6.21.0.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-typescript-estree-virtual-bfceed7ba6/4/.yarn/berry/cache/@typescript-eslint-typescript-estree-npm-6.21.0-6f564b8f29-10c0.zip/node_modules/@typescript-eslint/typescript-estree/",\
         "packageDependencies": [\
-          ["@typescript-eslint/typescript-estree", "virtual:da3498500feadd817a96b6977ef5ca2f270d9c450ba2e7d021af26a772c5f5a9879dcf09eaa7082ff6f48a79bef5e0e7a07fc7c35142c9ad97b1c8187ff374f5#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-6.21.0.tgz"],\
+          ["@typescript-eslint/typescript-estree", "virtual:c96b1fcebc6c89b5aa732b63683b9c53a55fdbb8e83208a65e4093c60af8f60c4e35e2ad7e1cb60cee669020da94ba70f429621b31e44e16ef1883e674939b35#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-6.21.0.tgz"],\
           ["@types/typescript", null],\
           ["@typescript-eslint/types", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypes%2F-%2Ftypes-6.21.0.tgz"],\
           ["@typescript-eslint/visitor-keys", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fvisitor-keys%2F-%2Fvisitor-keys-6.21.0.tgz"],\
@@ -3074,8 +3070,8 @@ const RAW_RUNTIME_STATE =
           ["is-glob", "npm:4.0.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fis-glob%2F-%2Fis-glob-4.0.3.tgz"],\
           ["minimatch", "npm:9.0.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fminimatch%2F-%2Fminimatch-9.0.3.tgz"],\
           ["semver", "npm:7.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsemver%2F-%2Fsemver-7.6.0.tgz"],\
-          ["ts-api-utils", "virtual:69ac960dfaa3769cb88395a77402afe05c8110c51e91283125a61478f3cc5945416b720fa6425db0a20cf0bfcc64370c6dcef95f0416ce30de2180a5965d9d39#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz"],\
-          ["typescript", null]\
+          ["ts-api-utils", "virtual:0b003fc69c1f97691a69ad7581bfa01833e7e0b5b2852b21b74145f71b7393af8669cca826382b7b9a3ac092b552c60958998acf0e0781d649794b2f862760a8#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz"],\
+          ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
         "packagePeers": [\
           "@types/typescript",\
@@ -3092,17 +3088,17 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:9c0b0eca5144631708ca66110450965a510e883e6bf92bce8f6b6c89fc0adf131a91c746f6ffa7660922c73c17e38a4a9dadc6229ed7d383382d42c2f6765a52#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Futils%2F-%2Futils-6.21.0.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-utils-virtual-da3498500f/4/.yarn/berry/cache/@typescript-eslint-utils-npm-6.21.0-57fc009966-10c0.zip/node_modules/@typescript-eslint/utils/",\
+      ["virtual:0b003fc69c1f97691a69ad7581bfa01833e7e0b5b2852b21b74145f71b7393af8669cca826382b7b9a3ac092b552c60958998acf0e0781d649794b2f862760a8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Futils%2F-%2Futils-6.21.0.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/@typescript-eslint-utils-virtual-2e37b6e037/4/.yarn/berry/cache/@typescript-eslint-utils-npm-6.21.0-57fc009966-10c0.zip/node_modules/@typescript-eslint/utils/",\
         "packageDependencies": [\
-          ["@typescript-eslint/utils", "virtual:9c0b0eca5144631708ca66110450965a510e883e6bf92bce8f6b6c89fc0adf131a91c746f6ffa7660922c73c17e38a4a9dadc6229ed7d383382d42c2f6765a52#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Futils%2F-%2Futils-6.21.0.tgz"],\
+          ["@typescript-eslint/utils", "virtual:0b003fc69c1f97691a69ad7581bfa01833e7e0b5b2852b21b74145f71b7393af8669cca826382b7b9a3ac092b552c60958998acf0e0781d649794b2f862760a8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Futils%2F-%2Futils-6.21.0.tgz"],\
           ["@eslint-community/eslint-utils", "virtual:559169e36e71ea53a54bdfb3e7f213c8f6c5d30497aaf1aab309184137973e1815d964c1652acab61d31d7830a8646102574569074c69ce10b5b57baf7cdfce7#npm:4.4.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40eslint-community%2Feslint-utils%2F-%2Feslint-utils-4.4.0.tgz"],\
           ["@types/eslint", null],\
           ["@types/json-schema", "npm:7.0.15::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Fjson-schema%2F-%2Fjson-schema-7.0.15.tgz"],\
           ["@types/semver", "npm:7.5.7::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Fsemver%2F-%2Fsemver-7.5.7.tgz"],\
           ["@typescript-eslint/scope-manager", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fscope-manager%2F-%2Fscope-manager-6.21.0.tgz"],\
           ["@typescript-eslint/types", "npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypes%2F-%2Ftypes-6.21.0.tgz"],\
-          ["@typescript-eslint/typescript-estree", "virtual:da3498500feadd817a96b6977ef5ca2f270d9c450ba2e7d021af26a772c5f5a9879dcf09eaa7082ff6f48a79bef5e0e7a07fc7c35142c9ad97b1c8187ff374f5#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-6.21.0.tgz"],\
+          ["@typescript-eslint/typescript-estree", "virtual:2e37b6e03721610da6113fec0039d2a5dd2428a7b35206865a358dcd29e65500ef6a826c8fce0c3be7d869b435b4328ed7426ddb7f1e4e025c2c44ad601f6c06#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Ftypescript-estree%2F-%2Ftypescript-estree-6.21.0.tgz"],\
           ["eslint", "npm:8.56.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint%2F-%2Feslint-8.56.0.tgz"],\
           ["semver", "npm:7.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsemver%2F-%2Fsemver-7.6.0.tgz"]\
         ],\
@@ -3141,6 +3137,24 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
+      ["virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/@vitejs-plugin-react-virtual-a57594c1a5/4/.yarn/berry/cache/@vitejs-plugin-react-npm-4.2.1-16e2833713-10c0.zip/node_modules/@vitejs/plugin-react/",\
+        "packageDependencies": [\
+          ["@vitejs/plugin-react", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz"],\
+          ["@babel/core", "npm:7.23.9::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40babel%2Fcore%2F-%2Fcore-7.23.9.tgz"],\
+          ["@babel/plugin-transform-react-jsx-self", "virtual:8dddf9a0e12124e32fadb062ed440c5de213046ce6868ed28d1e39db6b51b137eeadac0c66a8a53ed4938d945c1165e26ae2e0b2a457f556e032237ef295a11b#npm:7.23.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40babel%2Fplugin-transform-react-jsx-self%2F-%2Fplugin-transform-react-jsx-self-7.23.3.tgz"],\
+          ["@babel/plugin-transform-react-jsx-source", "virtual:8dddf9a0e12124e32fadb062ed440c5de213046ce6868ed28d1e39db6b51b137eeadac0c66a8a53ed4938d945c1165e26ae2e0b2a457f556e032237ef295a11b#npm:7.23.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40babel%2Fplugin-transform-react-jsx-source%2F-%2Fplugin-transform-react-jsx-source-7.23.3.tgz"],\
+          ["@types/babel__core", "npm:7.20.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Fbabel__core%2F-%2Fbabel__core-7.20.5.tgz"],\
+          ["@types/vite", null],\
+          ["react-refresh", "npm:0.14.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-refresh%2F-%2Freact-refresh-0.14.0.tgz"],\
+          ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
+        ],\
+        "packagePeers": [\
+          "@types/vite",\
+          "vite"\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz", {\
         "packageLocation": "./.yarn/__virtual__/@vitejs-plugin-react-virtual-8dddf9a0e1/4/.yarn/berry/cache/@vitejs-plugin-react-npm-4.2.1-16e2833713-10c0.zip/node_modules/@vitejs/plugin-react/",\
         "packageDependencies": [\
@@ -3152,24 +3166,6 @@ const RAW_RUNTIME_STATE =
           ["@types/vite", null],\
           ["react-refresh", "npm:0.14.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-refresh%2F-%2Freact-refresh-0.14.0.tgz"],\
           ["vite", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
-        ],\
-        "packagePeers": [\
-          "@types/vite",\
-          "vite"\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/@vitejs-plugin-react-virtual-b5c0465f46/4/.yarn/berry/cache/@vitejs-plugin-react-npm-4.2.1-16e2833713-10c0.zip/node_modules/@vitejs/plugin-react/",\
-        "packageDependencies": [\
-          ["@vitejs/plugin-react", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz"],\
-          ["@babel/core", "npm:7.23.9::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40babel%2Fcore%2F-%2Fcore-7.23.9.tgz"],\
-          ["@babel/plugin-transform-react-jsx-self", "virtual:8dddf9a0e12124e32fadb062ed440c5de213046ce6868ed28d1e39db6b51b137eeadac0c66a8a53ed4938d945c1165e26ae2e0b2a457f556e032237ef295a11b#npm:7.23.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40babel%2Fplugin-transform-react-jsx-self%2F-%2Fplugin-transform-react-jsx-self-7.23.3.tgz"],\
-          ["@babel/plugin-transform-react-jsx-source", "virtual:8dddf9a0e12124e32fadb062ed440c5de213046ce6868ed28d1e39db6b51b137eeadac0c66a8a53ed4938d945c1165e26ae2e0b2a457f556e032237ef295a11b#npm:7.23.3::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40babel%2Fplugin-transform-react-jsx-source%2F-%2Fplugin-transform-react-jsx-source-7.23.3.tgz"],\
-          ["@types/babel__core", "npm:7.20.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Fbabel__core%2F-%2Fbabel__core-7.20.5.tgz"],\
-          ["@types/vite", null],\
-          ["react-refresh", "npm:0.14.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-refresh%2F-%2Freact-refresh-0.14.0.tgz"],\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
         ],\
         "packagePeers": [\
           "@types/vite",\
@@ -3239,7 +3235,7 @@ const RAW_RUNTIME_STATE =
           ["@vitejs/plugin-vue", "virtual:bc6b972deed4c6cb2751d67cd17f0130b89db3621c683d8bd145a9902b5344fc5b57e78f31243679e673f5440997d95420adf126e7301f1ea0fd89de494c5310#npm:4.6.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-vue%2F-%2Fplugin-vue-4.6.2.tgz"],\
           ["@types/vite", null],\
           ["@types/vue", null],\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"],\
+          ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"],\
           ["vue", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:3.4.18::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvue%2F-%2Fvue-3.4.18.tgz"]\
         ],\
         "packagePeers": [\
@@ -3455,6 +3451,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["about", "workspace:apps/about"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
+          ["@prometheus/env", "workspace:packages/environment"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
           ["react-dom", "virtual:ea9010a8d940bd683aa1940d089b8cdbe2bd867e8f1846a31afeae15b6c5423c6c8ed46e92eeaa4f9f27f2c4642e2b23ecb0712176b54c1d89728ba4f23046a0#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
@@ -4405,30 +4402,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["container", [\
-      ["workspace:apps/container", {\
-        "packageLocation": "./apps/container/",\
-        "packageDependencies": [\
-          ["container", "workspace:apps/container"],\
-          ["@local/prometheus", "workspace:packages/prometheus"],\
-          ["@prometheus/runtime", "workspace:packages/runtime"],\
-          ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
-          ["@types/react-dom", "npm:18.2.19::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-dom%2F-%2Freact-dom-18.2.19.tgz"],\
-          ["@typescript-eslint/eslint-plugin", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
-          ["@typescript-eslint/parser", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
-          ["@vitejs/plugin-react", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz"],\
-          ["eslint", "npm:8.56.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint%2F-%2Feslint-8.56.0.tgz"],\
-          ["eslint-plugin-react-hooks", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz"],\
-          ["eslint-plugin-react-refresh", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz"],\
-          ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
-          ["react-dom", "virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
-          ["react-lottie", "virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:1.2.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-lottie%2F-%2Freact-lottie-1.2.4.tgz"],\
-          ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
-        ],\
-        "linkType": "SOFT"\
-      }]\
-    ]],\
     ["content-disposition", [\
       ["npm:0.5.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fcontent-disposition%2F-%2Fcontent-disposition-0.5.4.tgz", {\
         "packageLocation": "../../../.yarn/berry/cache/content-disposition-npm-0.5.4-aab0e14fa5-10c0.zip/node_modules/content-disposition/",\
@@ -5128,10 +5101,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/eslint-plugin-react-hooks-virtual-de71c21ff7/4/.yarn/berry/cache/eslint-plugin-react-hooks-npm-4.6.0-86ae7550bc-10c0.zip/node_modules/eslint-plugin-react-hooks/",\
+      ["virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/eslint-plugin-react-hooks-virtual-863bdca9d6/4/.yarn/berry/cache/eslint-plugin-react-hooks-npm-4.6.0-86ae7550bc-10c0.zip/node_modules/eslint-plugin-react-hooks/",\
         "packageDependencies": [\
-          ["eslint-plugin-react-hooks", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz"],\
+          ["eslint-plugin-react-hooks", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz"],\
           ["@types/eslint", null],\
           ["eslint", "npm:8.56.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint%2F-%2Feslint-8.56.0.tgz"]\
         ],\
@@ -5150,10 +5123,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/eslint-plugin-react-refresh-virtual-0ecc63d2c8/4/.yarn/berry/cache/eslint-plugin-react-refresh-npm-0.4.5-1544837e7e-10c0.zip/node_modules/eslint-plugin-react-refresh/",\
+      ["virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/eslint-plugin-react-refresh-virtual-7ebb89b16f/4/.yarn/berry/cache/eslint-plugin-react-refresh-npm-0.4.5-1544837e7e-10c0.zip/node_modules/eslint-plugin-react-refresh/",\
         "packageDependencies": [\
-          ["eslint-plugin-react-refresh", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz"],\
+          ["eslint-plugin-react-refresh", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz"],\
           ["@types/eslint", null],\
           ["eslint", "npm:8.56.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint%2F-%2Feslint-8.56.0.tgz"]\
         ],\
@@ -5365,6 +5338,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["extreme", "workspace:apps/extreme"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
+          ["@prometheus/env", "workspace:packages/environment"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
           ["react-dom", "virtual:ea9010a8d940bd683aa1940d089b8cdbe2bd867e8f1846a31afeae15b6c5423c6c8ed46e92eeaa4f9f27f2c4642e2b23ecb0712176b54c1d89728ba4f23046a0#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
@@ -7126,13 +7100,13 @@ const RAW_RUNTIME_STATE =
           ["@tailwindcss/typography", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:0.5.10::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40tailwindcss%2Ftypography%2F-%2Ftypography-0.5.10.tgz"],\
           ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
           ["@types/react-dom", "npm:18.2.19::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-dom%2F-%2Freact-dom-18.2.19.tgz"],\
-          ["@typescript-eslint/eslint-plugin", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
-          ["@typescript-eslint/parser", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
-          ["@vitejs/plugin-react", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz"],\
+          ["@typescript-eslint/eslint-plugin", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
+          ["@typescript-eslint/parser", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
+          ["@vitejs/plugin-react", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz"],\
           ["autoprefixer", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:10.4.17::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fautoprefixer%2F-%2Fautoprefixer-10.4.17.tgz"],\
           ["eslint", "npm:8.56.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint%2F-%2Feslint-8.56.0.tgz"],\
-          ["eslint-plugin-react-hooks", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz"],\
-          ["eslint-plugin-react-refresh", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz"],\
+          ["eslint-plugin-react-hooks", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz"],\
+          ["eslint-plugin-react-refresh", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz"],\
           ["localforage", "npm:1.10.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Flocalforage%2F-%2Flocalforage-1.10.0.tgz"],\
           ["match-sorter", "npm:6.3.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fmatch-sorter%2F-%2Fmatch-sorter-6.3.4.tgz"],\
           ["postcss", "npm:8.4.35::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fpostcss%2F-%2Fpostcss-8.4.35.tgz"],\
@@ -7142,7 +7116,7 @@ const RAW_RUNTIME_STATE =
           ["sort-by", "npm:1.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsort-by%2F-%2Fsort-by-1.2.0.tgz"],\
           ["tailwindcss", "npm:3.4.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Ftailwindcss%2F-%2Ftailwindcss-3.4.1.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
+          ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -7728,18 +7702,19 @@ const RAW_RUNTIME_STATE =
           ["nano1", "workspace:apps/nano1"],\
           ["@heroicons/react", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:2.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40heroicons%2Freact%2F-%2Freact-2.1.1.tgz"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
+          ["@prometheus/env", "workspace:packages/environment"],\
           ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
           ["@types/react-dom", "npm:18.2.19::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-dom%2F-%2Freact-dom-18.2.19.tgz"],\
-          ["@typescript-eslint/eslint-plugin", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
-          ["@typescript-eslint/parser", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
-          ["@vitejs/plugin-react", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz"],\
+          ["@typescript-eslint/eslint-plugin", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
+          ["@typescript-eslint/parser", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
+          ["@vitejs/plugin-react", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz"],\
           ["eslint", "npm:8.56.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint%2F-%2Feslint-8.56.0.tgz"],\
-          ["eslint-plugin-react-hooks", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz"],\
-          ["eslint-plugin-react-refresh", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz"],\
+          ["eslint-plugin-react-hooks", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz"],\
+          ["eslint-plugin-react-refresh", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
           ["react-dom", "virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
+          ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -7751,20 +7726,21 @@ const RAW_RUNTIME_STATE =
           ["nano2", "workspace:apps/nano2"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
           ["@local/ui", "workspace:packages/ui"],\
+          ["@prometheus/env", "workspace:packages/environment"],\
           ["@sveltejs/vite-plugin-svelte", "virtual:327e94e9f03ea0813c2a8b7ace2fad5fdc47371abd20206c03461a8f22a8f7a2a536dbc227a8307e2ca90b1833f61af38dd47aaa6da914f8fe4c94902925a11d#npm:3.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40sveltejs%2Fvite-plugin-svelte%2F-%2Fvite-plugin-svelte-3.0.2.tgz"],\
           ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
           ["@types/react-dom", "npm:18.2.19::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-dom%2F-%2Freact-dom-18.2.19.tgz"],\
-          ["@typescript-eslint/eslint-plugin", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
-          ["@typescript-eslint/parser", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
-          ["@vitejs/plugin-react", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz"],\
+          ["@typescript-eslint/eslint-plugin", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
+          ["@typescript-eslint/parser", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
+          ["@vitejs/plugin-react", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz"],\
           ["eslint", "npm:8.56.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint%2F-%2Feslint-8.56.0.tgz"],\
-          ["eslint-plugin-react-hooks", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz"],\
-          ["eslint-plugin-react-refresh", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz"],\
+          ["eslint-plugin-react-hooks", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz"],\
+          ["eslint-plugin-react-refresh", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
           ["react-dom", "virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
           ["styled-components", "virtual:327e94e9f03ea0813c2a8b7ace2fad5fdc47371abd20206c03461a8f22a8f7a2a536dbc227a8307e2ca90b1833f61af38dd47aaa6da914f8fe4c94902925a11d#npm:6.1.8::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fstyled-components%2F-%2Fstyled-components-6.1.8.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
+          ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -7775,13 +7751,14 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["nano3", "workspace:apps/nano3"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
+          ["@prometheus/env", "workspace:packages/environment"],\
           ["@sveltejs/vite-plugin-svelte", "virtual:adb4cf22f49969531b2259d55530889712f4815e321165da588a7d8c996a8bdb90f4f507d67172182b049f80ed9aa093f54e256a42a4705119478984481d2f19#npm:3.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40sveltejs%2Fvite-plugin-svelte%2F-%2Fvite-plugin-svelte-3.0.2.tgz"],\
           ["@tsconfig/svelte", "npm:5.0.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40tsconfig%2Fsvelte%2F-%2Fsvelte-5.0.2.tgz"],\
           ["svelte", "npm:4.2.10::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsvelte%2F-%2Fsvelte-4.2.10.tgz"],\
           ["svelte-check", "virtual:adb4cf22f49969531b2259d55530889712f4815e321165da588a7d8c996a8bdb90f4f507d67172182b049f80ed9aa093f54e256a42a4705119478984481d2f19#npm:3.6.4::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fsvelte-check%2F-%2Fsvelte-check-3.6.4.tgz"],\
           ["tslib", "npm:2.6.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Ftslib%2F-%2Ftslib-2.6.2.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
+          ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -7792,9 +7769,10 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["nano4", "workspace:apps/nano4"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
+          ["@prometheus/env", "workspace:packages/environment"],\
           ["@vitejs/plugin-vue", "virtual:bc6b972deed4c6cb2751d67cd17f0130b89db3621c683d8bd145a9902b5344fc5b57e78f31243679e673f5440997d95420adf126e7301f1ea0fd89de494c5310#npm:4.6.2::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-vue%2F-%2Fplugin-vue-4.6.2.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"],\
+          ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"],\
           ["vue", "virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:3.4.18::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvue%2F-%2Fvue-3.4.18.tgz"],\
           ["vue-tsc", "virtual:bc6b972deed4c6cb2751d67cd17f0130b89db3621c683d8bd145a9902b5344fc5b57e78f31243679e673f5440997d95420adf126e7301f1ea0fd89de494c5310#npm:1.8.27::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvue-tsc%2F-%2Fvue-tsc-1.8.27.tgz"]\
         ],\
@@ -7810,16 +7788,16 @@ const RAW_RUNTIME_STATE =
           ["@prometheus/env", "workspace:packages/environment"],\
           ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
           ["@types/react-dom", "npm:18.2.19::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-dom%2F-%2Freact-dom-18.2.19.tgz"],\
-          ["@typescript-eslint/eslint-plugin", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
-          ["@typescript-eslint/parser", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
-          ["@vitejs/plugin-react", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz"],\
+          ["@typescript-eslint/eslint-plugin", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
+          ["@typescript-eslint/parser", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
+          ["@vitejs/plugin-react", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz"],\
           ["eslint", "npm:8.56.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint%2F-%2Feslint-8.56.0.tgz"],\
-          ["eslint-plugin-react-hooks", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz"],\
-          ["eslint-plugin-react-refresh", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz"],\
+          ["eslint-plugin-react-hooks", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz"],\
+          ["eslint-plugin-react-refresh", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
           ["react-dom", "virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
+          ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -9181,18 +9159,19 @@ const RAW_RUNTIME_STATE =
           ["shell", "workspace:apps/shell"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
           ["@local/sdk", "workspace:packages/sdk"],\
+          ["@prometheus/env", "workspace:packages/environment"],\
           ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
           ["@types/react-dom", "npm:18.2.19::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-dom%2F-%2Freact-dom-18.2.19.tgz"],\
-          ["@typescript-eslint/eslint-plugin", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
-          ["@typescript-eslint/parser", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
-          ["@vitejs/plugin-react", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz"],\
+          ["@typescript-eslint/eslint-plugin", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
+          ["@typescript-eslint/parser", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
+          ["@vitejs/plugin-react", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz"],\
           ["eslint", "npm:8.56.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint%2F-%2Feslint-8.56.0.tgz"],\
-          ["eslint-plugin-react-hooks", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz"],\
-          ["eslint-plugin-react-refresh", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz"],\
+          ["eslint-plugin-react-hooks", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz"],\
+          ["eslint-plugin-react-refresh", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
           ["react-dom", "virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
+          ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -9263,16 +9242,16 @@ const RAW_RUNTIME_STATE =
           ["@prometheus/env", "workspace:packages/environment"],\
           ["@types/react", "npm:18.2.55::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact%2F-%2Freact-18.2.55.tgz"],\
           ["@types/react-dom", "npm:18.2.19::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40types%2Freact-dom%2F-%2Freact-dom-18.2.19.tgz"],\
-          ["@typescript-eslint/eslint-plugin", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
-          ["@typescript-eslint/parser", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
-          ["@vitejs/plugin-react", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz"],\
+          ["@typescript-eslint/eslint-plugin", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Feslint-plugin%2F-%2Feslint-plugin-6.21.0.tgz"],\
+          ["@typescript-eslint/parser", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:6.21.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40typescript-eslint%2Fparser%2F-%2Fparser-6.21.0.tgz"],\
+          ["@vitejs/plugin-react", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:4.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2F%40vitejs%2Fplugin-react%2F-%2Fplugin-react-4.2.1.tgz"],\
           ["eslint", "npm:8.56.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint%2F-%2Feslint-8.56.0.tgz"],\
-          ["eslint-plugin-react-hooks", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz"],\
-          ["eslint-plugin-react-refresh", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz"],\
+          ["eslint-plugin-react-hooks", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:4.6.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-hooks%2F-%2Feslint-plugin-react-hooks-4.6.0.tgz"],\
+          ["eslint-plugin-react-refresh", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:0.4.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Feslint-plugin-react-refresh%2F-%2Feslint-plugin-react-refresh-0.4.5.tgz"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
           ["react-dom", "virtual:cf5392deb3d9bcef2455d0d7b0d72c851c062989ba973a20864da1fd965e53937e3596a484f76d3a615caaf4ad0955361751182bed326921c5968858796a2f41#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
           ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"],\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
+          ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -9413,6 +9392,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["started", "workspace:apps/gettingStarted"],\
           ["@local/prometheus", "workspace:packages/prometheus"],\
+          ["@prometheus/env", "workspace:packages/environment"],\
           ["prism-react-renderer", "virtual:69c89d3c28f292944f5d734b8db5ef1787896fc0dada54747d5bed7ccb25912ae684cb603c6845983658e0ebea463ae1c7a4b3e2c67cec97d2673c7a0bcac231#npm:2.3.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fprism-react-renderer%2F-%2Fprism-react-renderer-2.3.1.tgz"],\
           ["react", "npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact%2F-%2Freact-18.2.0.tgz"],\
           ["react-dom", "virtual:ea9010a8d940bd683aa1940d089b8cdbe2bd867e8f1846a31afeae15b6c5423c6c8ed46e92eeaa4f9f27f2c4642e2b23ecb0712176b54c1d89728ba4f23046a0#npm:18.2.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Freact-dom%2F-%2Freact-dom-18.2.0.tgz"],\
@@ -9957,12 +9937,12 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:69ac960dfaa3769cb88395a77402afe05c8110c51e91283125a61478f3cc5945416b720fa6425db0a20cf0bfcc64370c6dcef95f0416ce30de2180a5965d9d39#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/ts-api-utils-virtual-8391b10425/4/.yarn/berry/cache/ts-api-utils-npm-1.2.1-195dfdd40e-10c0.zip/node_modules/ts-api-utils/",\
+      ["virtual:0b003fc69c1f97691a69ad7581bfa01833e7e0b5b2852b21b74145f71b7393af8669cca826382b7b9a3ac092b552c60958998acf0e0781d649794b2f862760a8#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/ts-api-utils-virtual-c711634253/4/.yarn/berry/cache/ts-api-utils-npm-1.2.1-195dfdd40e-10c0.zip/node_modules/ts-api-utils/",\
         "packageDependencies": [\
-          ["ts-api-utils", "virtual:69ac960dfaa3769cb88395a77402afe05c8110c51e91283125a61478f3cc5945416b720fa6425db0a20cf0bfcc64370c6dcef95f0416ce30de2180a5965d9d39#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz"],\
+          ["ts-api-utils", "virtual:0b003fc69c1f97691a69ad7581bfa01833e7e0b5b2852b21b74145f71b7393af8669cca826382b7b9a3ac092b552c60958998acf0e0781d649794b2f862760a8#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz"],\
           ["@types/typescript", null],\
-          ["typescript", null]\
+          ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
         ],\
         "packagePeers": [\
           "@types/typescript",\
@@ -9970,12 +9950,12 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["virtual:9c0b0eca5144631708ca66110450965a510e883e6bf92bce8f6b6c89fc0adf131a91c746f6ffa7660922c73c17e38a4a9dadc6229ed7d383382d42c2f6765a52#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/ts-api-utils-virtual-c8b3546e43/4/.yarn/berry/cache/ts-api-utils-npm-1.2.1-195dfdd40e-10c0.zip/node_modules/ts-api-utils/",\
+      ["virtual:35679feac1d63fc39b57ff96d05030486dae660d7524aba9b675021e228bd8abd3e8502ceb7237853c9f664435be85d3814b5e35fb7fb27f16573954aae0bf27#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/ts-api-utils-virtual-6d2b4dd528/4/.yarn/berry/cache/ts-api-utils-npm-1.2.1-195dfdd40e-10c0.zip/node_modules/ts-api-utils/",\
         "packageDependencies": [\
-          ["ts-api-utils", "virtual:9c0b0eca5144631708ca66110450965a510e883e6bf92bce8f6b6c89fc0adf131a91c746f6ffa7660922c73c17e38a4a9dadc6229ed7d383382d42c2f6765a52#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz"],\
+          ["ts-api-utils", "virtual:35679feac1d63fc39b57ff96d05030486dae660d7524aba9b675021e228bd8abd3e8502ceb7237853c9f664435be85d3814b5e35fb7fb27f16573954aae0bf27#npm:1.2.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fts-api-utils%2F-%2Fts-api-utils-1.2.1.tgz"],\
           ["@types/typescript", null],\
-          ["typescript", "patch:typescript@npm%3A5.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ftypescript%252F-%252Ftypescript-5.3.3.tgz#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"]\
+          ["typescript", null]\
         ],\
         "packagePeers": [\
           "@types/typescript",\
@@ -10401,6 +10381,45 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
+      ["virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz", {\
+        "packageLocation": "./.yarn/__virtual__/vite-virtual-67e2ea60ee/4/.yarn/berry/cache/vite-npm-5.1.1-9621dd1bc0-10c0.zip/node_modules/vite/",\
+        "packageDependencies": [\
+          ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"],\
+          ["@types/less", null],\
+          ["@types/lightningcss", null],\
+          ["@types/node", null],\
+          ["@types/sass", null],\
+          ["@types/stylus", null],\
+          ["@types/sugarss", null],\
+          ["@types/terser", null],\
+          ["esbuild", "npm:0.19.12::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fesbuild%2F-%2Fesbuild-0.19.12.tgz"],\
+          ["fsevents", "patch:fsevents@npm%3A2.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ffsevents%252F-%252Ffsevents-2.3.3.tgz#optional!builtin<compat/fsevents>::version=2.3.3&hash=df0bf1"],\
+          ["less", null],\
+          ["lightningcss", null],\
+          ["postcss", "npm:8.4.35::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fpostcss%2F-%2Fpostcss-8.4.35.tgz"],\
+          ["rollup", "npm:4.10.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Frollup%2F-%2Frollup-4.10.0.tgz"],\
+          ["sass", null],\
+          ["stylus", null],\
+          ["sugarss", null],\
+          ["terser", null]\
+        ],\
+        "packagePeers": [\
+          "@types/less",\
+          "@types/lightningcss",\
+          "@types/node",\
+          "@types/sass",\
+          "@types/stylus",\
+          "@types/sugarss",\
+          "@types/terser",\
+          "less",\
+          "lightningcss",\
+          "sass",\
+          "stylus",\
+          "sugarss",\
+          "terser"\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["virtual:7e9a8e870e57a92fd39819278e7728e50ac80738e4f8ea7d72aab013451afa6fcb44984f6790f38318a6094025a0c967cd492d632205b65d6aefdaad5d6be448#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz", {\
         "packageLocation": "./.yarn/__virtual__/vite-virtual-357b73bd67/4/.yarn/berry/cache/vite-npm-5.1.1-9621dd1bc0-10c0.zip/node_modules/vite/",\
         "packageDependencies": [\
@@ -10439,45 +10458,6 @@ const RAW_RUNTIME_STATE =
           "terser"\
         ],\
         "linkType": "HARD"\
-      }],\
-      ["virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz", {\
-        "packageLocation": "./.yarn/__virtual__/vite-virtual-d56305dbbd/4/.yarn/berry/cache/vite-npm-5.1.1-9621dd1bc0-10c0.zip/node_modules/vite/",\
-        "packageDependencies": [\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"],\
-          ["@types/less", null],\
-          ["@types/lightningcss", null],\
-          ["@types/node", null],\
-          ["@types/sass", null],\
-          ["@types/stylus", null],\
-          ["@types/sugarss", null],\
-          ["@types/terser", null],\
-          ["esbuild", "npm:0.19.12::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fesbuild%2F-%2Fesbuild-0.19.12.tgz"],\
-          ["fsevents", "patch:fsevents@npm%3A2.3.3%3A%3A__archiveUrl=https%253A%252F%252Fartifactory.internal.cba%253A443%252Fartifactory%252Fapi%252Fnpm%252Fnpm-dev%252Ffsevents%252F-%252Ffsevents-2.3.3.tgz#optional!builtin<compat/fsevents>::version=2.3.3&hash=df0bf1"],\
-          ["less", null],\
-          ["lightningcss", null],\
-          ["postcss", "npm:8.4.35::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fpostcss%2F-%2Fpostcss-8.4.35.tgz"],\
-          ["rollup", "npm:4.10.0::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Frollup%2F-%2Frollup-4.10.0.tgz"],\
-          ["sass", null],\
-          ["stylus", null],\
-          ["sugarss", null],\
-          ["terser", null]\
-        ],\
-        "packagePeers": [\
-          "@types/less",\
-          "@types/lightningcss",\
-          "@types/node",\
-          "@types/sass",\
-          "@types/stylus",\
-          "@types/sugarss",\
-          "@types/terser",\
-          "less",\
-          "lightningcss",\
-          "sass",\
-          "stylus",\
-          "sugarss",\
-          "terser"\
-        ],\
-        "linkType": "HARD"\
       }]\
     ]],\
     ["vitefu", [\
@@ -10493,7 +10473,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["vitefu", "virtual:0b55658376cab752bfc7bd56b679365f88fd3bd6b424071dd49411cd270ac70eeec356c0a3ea85b60d1b9c2d11063f6bbabdaadc3ded03e10c557674a84498b5#npm:0.2.5::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvitefu%2F-%2Fvitefu-0.2.5.tgz"],\
           ["@types/vite", null],\
-          ["vite", "virtual:cc28807c9351828f3c3509851bbcadb837968b469477b70e8513df736acda1a5b4897e7dd8e27760a9bbd996c6487f3a9eb53d35216f9f52ca76e665dc76ca98#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
+          ["vite", "virtual:134441e6583337d0fadcb940fb3c81ecff7ab6881cd9505a02baa85d8ca2b243304a676b4c36a89e98dd1617d2c1508f418e243a2f2be8f6b682719604d981e8#npm:5.1.1::__archiveUrl=https%3A%2F%2Fartifactory.internal.cba%3A443%2Fartifactory%2Fapi%2Fnpm%2Fnpm-dev%2Fvite%2F-%2Fvite-5.1.1.tgz"]\
         ],\
         "packagePeers": [\
           "@types/vite",\
