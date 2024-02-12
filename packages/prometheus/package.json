@@ -1,7 +1,7 @@
 {
   "name": "@local/prometheus",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "crazywolf132",
   "license": "MIT",
   "type": "module",
@@ -10,7 +10,11 @@
     "dist"
   ],
   "exports": {
-    ".": "./dist/index.js",
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.cts"
+    },
     "./server": {
       "import": "./dist/server.js",
       "require": "./dist/server.cjs",

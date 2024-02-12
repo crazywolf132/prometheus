@@ -6,7 +6,7 @@ export default defineConfig(
       name: "PROMETHEUS",
       entryPoints: ["src/index.ts"],
       target: "esnext",
-      format: ["esm"],
+      format: ["cjs", "esm"],
       dts: true,
       platform: "node",
       metafile: true,

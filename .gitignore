@@ -1,4 +1,14 @@
 .tubo
 node_modules
 dist
+.turbo/**
 
+turbo-build.log
+
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
