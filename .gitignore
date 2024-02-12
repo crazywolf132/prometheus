@@ -17,5 +17,5 @@ turbo-build.log
 .prometheus
 .DS_Store
 
-apps/*
-apps
+packages/server/apps/*
+packages/server/apps

@@ -6,13 +6,15 @@ import { Spinner } from './Spinner';
 
 const App = () => {
     return (
-        <LoadApp
-            // Name of the application we want to load.
-            // This is the name for a `local` build.
-            spinner={Spinner}
-            appName="nanoapp"
-            internal={{react: React, "react-dom": rd}}
-        />
+        <>
+            <LoadApp
+                // Name of the application we want to load.
+                // This is the name for a `local` build.
+                spinner={Spinner}
+                appName="nanoapp"
+                internal={{react: React, "react-dom": rd}}
+            />
+        </>
     );
 }
 

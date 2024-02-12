@@ -18,6 +18,7 @@ import type { Command } from "@types";
 import { getEntry, getExternals, getPlugins, hasShell } from "@utils";
 import { execSync } from "node:child_process";
 import fs from 'node:fs';
+import { sep } from "node:path";
 import { createServer } from "vite";
 import log from 'volog';
 import build from "./build";
@@ -36,7 +37,7 @@ export default {
         const foundShell = hasShell();
         let external = !foundShell;
         log.info("Development mode starting", "has shell?", foundShell)
-        let basePath = execSync(`node -e "console.log(require.resolve('@prometheus/env'))"`, { encoding: 'utf-8' }).trim().split("/").slice(0, -2).join("/");
+        let basePath = execSync(`node -e "console.log(require.resolve('@prometheus/env'))"`, { encoding: 'utf-8' }).trim().split(sep).slice(0, -2).join(sep);
         log.info("Base path", "location", basePath)
 
         // Seeing as we are using yarn in this repo, we will create a `.prometheus` folder which will have the shell code.
@@ -44,11 +45,12 @@ export default {
         if (!foundShell) {
             // We are going to copy everything from the basePath to the `.prometheus` folder.
             // Going to delete the `.prometheus` folder
-            try { fs.rmdirSync(".prometheus", { recursive: true }); } catch {}
+            try { fs.rmSync(".prometheus", { recursive: true }); } catch {}
             fs.mkdirSync(".prometheus/dist", { recursive: true });
             fs.mkdirSync(".prometheus/public/assets", { recursive: true });
             fs.copyFileSync(`${basePath}/index.html`, ".prometheus/index.html");
-            fs.copyFileSync(`${basePath}/dist/main.js`, ".prometheus/dist/main.js");
+            fs.copyFileSync(`${basePath}/src/main.tsx`, ".prometheus/dist/shell.tsx");
+            fs.copyFileSync(`${basePath}/src/Spinner.tsx`, ".prometheus/dist/Spinner.tsx");
             fs.copyFileSync(`${basePath}/public/assets/spinner.gif`, ".prometheus/public/assets/spinner.gif");
             basePath = ".prometheus";
         }
