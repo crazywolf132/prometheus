@@ -14,5 +14,3 @@ PROMETHEUS TODO
 - Create a quick re-skin example using 2 shells
 - Create full coverage unit tests for the CLI
 - Create full coverage unit tests for the runtime.
-- Add a router to the `landing` example, and have the full architecture readme on another page.
-    - make this other page a nanoapp too.

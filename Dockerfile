@@ -26,7 +26,7 @@ CMD if [ "$RUN_LANDING_PAGE" = "true" ]; then \
         yarn dev --cwd ./packages/server & \
         sleep 2 && yarn out && cd ./apps/landing && yarn start; \
     else \
-        cd ./aps/{NANO_APP_NAME} && yarn start; \
+        cd ./apps/$NANO_APP_NAME && yarn start; \
     fi
 
 # Expose the necessary ports
