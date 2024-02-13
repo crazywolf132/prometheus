@@ -66,6 +66,9 @@ export default {
             ...commonConfig({
                 name, entry, plugins, externals: toExternalise
             }),
+            server: {
+                "host": "0.0.0.0",
+            },
 
             root: foundShell ? process.cwd() : basePath,
         });
