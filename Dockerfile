@@ -24,9 +24,9 @@ ENV NANO_APP_NAME="nano1"
 # Set the default command to run when the container starts
 CMD if [ "$RUN_LANDING_PAGE" = "true" ]; then \
         yarn dev --cwd ./packages/server & \
-        sleep 2 && yarn out && yarn start --cwd ./apps/landing; \
+        sleep 2 && yarn out && cd ./apps/landing && yarn start; \
     else \
-        yarn start --cwd ./apps/{NANO_APP_NAME}; \
+        cd ./aps/{NANO_APP_NAME} && yarn start; \
     fi
 
 # Expose the necessary ports
