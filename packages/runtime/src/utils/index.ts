@@ -4,4 +4,4 @@ export * from "./getManifest";
 export * from "./matchSha";
 export * from "./require";
 export * from './returnApp';
-
+export * from './cache'

@@ -1,5 +1,5 @@
 import type { Bundle, NanoAppFunction } from "@types";
-import { execute, fetchBundle, returnAppAsElement } from "@utils";
+import { execute, returnAppAsElement, fetchWithCache } from "@utils";
 // @ts-ignore; No type files for this dep
 import cloneOrCreate from "clone-or-create";
 import React from "react";
@@ -15,37 +15,33 @@ type Props = {
 
 const Placeholder = (props: any) => props.children;
 
-export const LoadApp = (props: Props) => {
-  // const [app, setApp] = React.useState<any>(Spinner);
+export const LoadApp = React.memo((props: Props) => {
   const [styles, setStyles] = React.useState<string>("");
   const Spinner = props.spinner ?? Placeholder;
 
-  const load = React.useCallback(async (shadowRoot: any) => {
-    const bundle = (await fetchBundle(
-      "http://localhost:5000",
-      props.appName,
-    )) satisfies Bundle;
-
-    const nanoApp = execute(bundle.code, {
-      react: React,
-      "react-dom": ReactDOM,
-      "clone-or-create": cloneOrCreate,
-      ...props.internal,
-      __root: `${props.appName}_root`,
-      "@internal": {
+  const loadApp = async (shadowRoot: ShadowRoot) => {
+    try {
+      const bundleUrl = `http://localhost:5000/bundles/${props.appName}`;
+      const bundle = await fetchWithCache(bundleUrl);
+      
+      const nanoApp = execute(bundle.code, {
+        react: React,
+        "react-dom": ReactDOM,
+        "clone-or-create": cloneOrCreate,
         ...props.internal,
-        errorBoundary: props.errorBoundary ?? Placeholder,
-      },
-    });
+        "@internal": {
+          ...props.internal,
+          errorBoundary: props.errorBoundary ?? Placeholder,
+        },
+      });
 
-    returnAppAsElement(nanoApp as NanoAppFunction, `root_container_${props.appName}`, `${props.appName}_parent_container`, shadowRoot)
-    setStyles((nanoApp as NanoAppFunction).styles);
-    // If we made it this far, we can check for the spinner and remove it.
-    const spinner = shadowRoot.getElementById("root_container_spinner");
-    if (spinner) {
-      spinner.remove();
+      returnAppAsElement(nanoApp, `root_container_${props.appName}`, `${props.appName}_parent_container`, shadowRoot);
+      setStyles(nanoApp.styles);
+
+    } catch (error) {
+      console.error("Error loading app:", error);
     }
-  }, [props]);
+  };
 
   const ErrorLayer = (props.errorBoundary || Placeholder) as any; // Because ts is pretty shit
 
@@ -64,4 +60,4 @@ export const LoadApp = (props: Props) => {
       </ErrorLayer>
     </div>
   );
-};
+});
