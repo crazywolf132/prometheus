@@ -34,7 +34,7 @@ export const fetchWithCache = async (url: string): Promise<any> => {
     const cacheKey = `${CACHE_KEY_PREFIX}${url}`;
 
     // Attempt to use localStorage if available
-    if (storageAvailable('localStorage')) {
+    if (storageAvailable()) {
         const cached = localStorage.getItem(cacheKey);
 
         if (cached) {
@@ -71,7 +71,7 @@ export const fetchWithCache = async (url: string): Promise<any> => {
  * @param {string} url The URL whose cache to invalidate.
  */
 export const invalidateCache = (url: string): void => {
-    if (storageAvailable('localStorage')) {
+    if (storageAvailable()) {
         const cacheKey = `${CACHE_KEY_PREFIX}${url}`;
         localStorage.removeItem(cacheKey);
     }
