@@ -2,10 +2,10 @@ const CACHE_KEY_PREFIX = 'appCache_';
 const TTL = 1000 * 60 * 60; // 1 hour TTL for cache entries
 
 // Simple utility to check storage availability
-export const storageAvailable = (type: string) => {
+export const storageAvailable = () => {
     var storage;
     try {
-        storage = window[type];
+        storage = window['localStorage'];
         var x = '__storage_test__';
         storage.setItem(x, x);
         storage.removeItem(x);
@@ -30,7 +30,7 @@ export const storageAvailable = (type: string) => {
  * @param {string} url The URL to fetch data from.
  * @returns {Promise<any>} The fetched data.
  */
-export const fetchWithCache = (url: string): Promise<any> => {
+export const fetchWithCache = async (url: string): Promise<any> => {
     const cacheKey = `${CACHE_KEY_PREFIX}${url}`;
 
     // Attempt to use localStorage if available
@@ -53,7 +53,7 @@ export const fetchWithCache = (url: string): Promise<any> => {
         const newData = await response.json();
 
         // Only cache if localStorage is available
-        if (storageAvailable('localStorage')) {
+        if (storageAvailable()) {
             // Update cache with the new data
             localStorage.setItem(cacheKey, JSON.stringify({ data: newData, timestamp: Date.now() }));
         }
@@ -70,7 +70,7 @@ export const fetchWithCache = (url: string): Promise<any> => {
  * Invalidates cache for a specific URL.
  * @param {string} url The URL whose cache to invalidate.
  */
-export const invalidateCache = (url: string): void {
+export const invalidateCache = (url: string): void => {
     if (storageAvailable('localStorage')) {
         const cacheKey = `${CACHE_KEY_PREFIX}${url}`;
         localStorage.removeItem(cacheKey);

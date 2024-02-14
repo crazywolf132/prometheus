@@ -37,6 +37,11 @@ export const LoadApp = React.memo((props: Props) => {
 
       returnAppAsElement(nanoApp, `root_container_${props.appName}`, `${props.appName}_parent_container`, shadowRoot);
       setStyles(nanoApp.styles);
+      // If we made it this far, we can check for the spinner and remove it.
+      const spinner = shadowRoot.getElementById("root_container_spinner");
+      if (spinner) {
+        spinner.remove();
+      }
 
     } catch (error) {
       console.error("Error loading app:", error);
